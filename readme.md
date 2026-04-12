@@ -7,4 +7,4 @@
 - Controles: 2 letras (if: if, else: el, else if: ei, do: do, while: wl)
 
 ## Operações:
-- (+, -, =, ==, /, and, or, !)
+- (+, -, =, ==, /, *, and, or, !)
