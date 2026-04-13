@@ -7,7 +7,7 @@
 - Controles: 2 letras (if: if, else: el, else if: ei, do: do, while: wl)
 
 ## Operações:
-- (+, -, =, ==, /, and, or, !)
+- (+, -, =, ==, /, *, and, or, !)
 
 # Ativação: 
  - Ative o ambiente virtual com o presente na pasta "antlr/bin/activate"
