@@ -1,4 +1,4 @@
-grammar SimpleC;
+grammar cmaismenos;
 
 // ==========================================
 // REGRAS SINTÁTICAS (PARSER) - Letra minúscula
@@ -37,7 +37,7 @@ fator: NUMERO | ID | ABRE_PARENTESES expressao FECHA_PARENTESES;
 // Expressões lógicas
 expressaoLogica: termoLogico ((AND | OR) termoLogico)*;
 termoLogico: NOT? (comparacao | ABRE_PARENTESES expressaoLogica FECHA_PARENTESES);
-comparacao: expressao IGUAL expressao | expressao MENOR expressao;  // Adicionando < para while
+comparacao: expressao IGUAL expressao | expressao MENOR expressao | expressao MAIOR expressao;
 
 // ==========================================
 // REGRAS LÉXICAS (LEXER) - Letra maiúscula
@@ -73,11 +73,16 @@ AND: 'and';
 OR: 'or';
 NOT: '!';
 MENOR: '<';
+MAIOR: '>';
 
 // Literais
 STRING: '"' (~["\r\n])* '"';
 ID: [a-zA-Z_][a-zA-Z_0-9]*;
 NUMERO: [0-9]+;
+
+// Comentários
+COMENTARIO_LINHA: '#' ~[\r\n]* -> skip;
+COMENTARIO_BLOCO: '###' .*? '###' -> skip;
 
 // Espaços
 ESPACO: [ \t\r\n]+ -> skip;

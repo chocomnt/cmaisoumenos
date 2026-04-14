@@ -1,4 +1,4 @@
-# Generated from SimpleC.g4 by ANTLR 4.13.2
+# Generated from cmaismenos.g4 by ANTLR 4.13.2
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,7 +10,7 @@ else:
 
 def serializedATN():
     return [
-        4,1,28,169,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,31,173,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,1,0,5,0,36,8,0,10,0,12,0,39,9,0,1,
         0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,3,1,49,8,1,1,2,1,2,1,2,1,2,1,2,1,3,
@@ -22,55 +22,57 @@ def serializedATN():
         9,11,1,12,1,12,1,12,5,12,128,8,12,10,12,12,12,131,9,12,1,13,1,13,
         1,13,1,13,1,13,1,13,3,13,139,8,13,1,14,1,14,1,14,5,14,144,8,14,10,
         14,12,14,147,9,14,1,15,3,15,150,8,15,1,15,1,15,1,15,1,15,1,15,3,
-        15,157,8,15,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,16,3,16,167,8,16,
-        1,16,0,0,17,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,0,3,1,
-        0,5,6,1,0,7,8,1,0,21,22,170,0,37,1,0,0,0,2,48,1,0,0,0,4,50,1,0,0,
-        0,6,57,1,0,0,0,8,59,1,0,0,0,10,65,1,0,0,0,12,71,1,0,0,0,14,77,1,
-        0,0,0,16,86,1,0,0,0,18,102,1,0,0,0,20,107,1,0,0,0,22,116,1,0,0,0,
-        24,124,1,0,0,0,26,138,1,0,0,0,28,140,1,0,0,0,30,149,1,0,0,0,32,166,
-        1,0,0,0,34,36,3,2,1,0,35,34,1,0,0,0,36,39,1,0,0,0,37,35,1,0,0,0,
-        37,38,1,0,0,0,38,40,1,0,0,0,39,37,1,0,0,0,40,41,5,0,0,1,41,1,1,0,
-        0,0,42,49,3,6,3,0,43,49,3,12,6,0,44,49,3,14,7,0,45,49,3,16,8,0,46,
-        49,3,18,9,0,47,49,3,4,2,0,48,42,1,0,0,0,48,43,1,0,0,0,48,44,1,0,
-        0,0,48,45,1,0,0,0,48,46,1,0,0,0,48,47,1,0,0,0,49,3,1,0,0,0,50,51,
-        5,26,0,0,51,52,5,4,0,0,52,53,3,22,11,0,53,54,5,9,0,0,54,5,1,0,0,
-        0,55,58,3,8,4,0,56,58,3,10,5,0,57,55,1,0,0,0,57,56,1,0,0,0,58,7,
-        1,0,0,0,59,60,5,1,0,0,60,61,5,26,0,0,61,62,5,4,0,0,62,63,3,22,11,
-        0,63,64,5,9,0,0,64,9,1,0,0,0,65,66,5,2,0,0,66,67,5,26,0,0,67,68,
-        5,4,0,0,68,69,5,25,0,0,69,70,5,9,0,0,70,11,1,0,0,0,71,72,5,14,0,
-        0,72,73,5,10,0,0,73,74,5,26,0,0,74,75,5,11,0,0,75,76,5,9,0,0,76,
-        13,1,0,0,0,77,78,5,15,0,0,78,81,5,10,0,0,79,82,3,22,11,0,80,82,5,
-        25,0,0,81,79,1,0,0,0,81,80,1,0,0,0,82,83,1,0,0,0,83,84,5,11,0,0,
-        84,85,5,9,0,0,85,15,1,0,0,0,86,87,5,16,0,0,87,88,3,28,14,0,88,91,
-        3,20,10,0,89,90,5,17,0,0,90,92,3,20,10,0,91,89,1,0,0,0,91,92,1,0,
-        0,0,92,99,1,0,0,0,93,94,5,18,0,0,94,95,3,28,14,0,95,96,3,20,10,0,
-        96,98,1,0,0,0,97,93,1,0,0,0,98,101,1,0,0,0,99,97,1,0,0,0,99,100,
-        1,0,0,0,100,17,1,0,0,0,101,99,1,0,0,0,102,103,5,20,0,0,103,104,3,
-        28,14,0,104,105,5,19,0,0,105,106,3,20,10,0,106,19,1,0,0,0,107,111,
-        5,12,0,0,108,110,3,2,1,0,109,108,1,0,0,0,110,113,1,0,0,0,111,109,
-        1,0,0,0,111,112,1,0,0,0,112,114,1,0,0,0,113,111,1,0,0,0,114,115,
-        5,13,0,0,115,21,1,0,0,0,116,121,3,24,12,0,117,118,7,0,0,0,118,120,
-        3,24,12,0,119,117,1,0,0,0,120,123,1,0,0,0,121,119,1,0,0,0,121,122,
-        1,0,0,0,122,23,1,0,0,0,123,121,1,0,0,0,124,129,3,26,13,0,125,126,
-        7,1,0,0,126,128,3,26,13,0,127,125,1,0,0,0,128,131,1,0,0,0,129,127,
-        1,0,0,0,129,130,1,0,0,0,130,25,1,0,0,0,131,129,1,0,0,0,132,139,5,
-        27,0,0,133,139,5,26,0,0,134,135,5,10,0,0,135,136,3,22,11,0,136,137,
-        5,11,0,0,137,139,1,0,0,0,138,132,1,0,0,0,138,133,1,0,0,0,138,134,
-        1,0,0,0,139,27,1,0,0,0,140,145,3,30,15,0,141,142,7,2,0,0,142,144,
-        3,30,15,0,143,141,1,0,0,0,144,147,1,0,0,0,145,143,1,0,0,0,145,146,
-        1,0,0,0,146,29,1,0,0,0,147,145,1,0,0,0,148,150,5,23,0,0,149,148,
-        1,0,0,0,149,150,1,0,0,0,150,156,1,0,0,0,151,157,3,32,16,0,152,153,
-        5,10,0,0,153,154,3,28,14,0,154,155,5,11,0,0,155,157,1,0,0,0,156,
-        151,1,0,0,0,156,152,1,0,0,0,157,31,1,0,0,0,158,159,3,22,11,0,159,
-        160,5,3,0,0,160,161,3,22,11,0,161,167,1,0,0,0,162,163,3,22,11,0,
-        163,164,5,24,0,0,164,165,3,22,11,0,165,167,1,0,0,0,166,158,1,0,0,
-        0,166,162,1,0,0,0,167,33,1,0,0,0,14,37,48,57,81,91,99,111,121,129,
-        138,145,149,156,166
+        15,157,8,15,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,16,1,
+        16,1,16,3,16,171,8,16,1,16,0,0,17,0,2,4,6,8,10,12,14,16,18,20,22,
+        24,26,28,30,32,0,3,1,0,5,6,1,0,7,8,1,0,21,22,175,0,37,1,0,0,0,2,
+        48,1,0,0,0,4,50,1,0,0,0,6,57,1,0,0,0,8,59,1,0,0,0,10,65,1,0,0,0,
+        12,71,1,0,0,0,14,77,1,0,0,0,16,86,1,0,0,0,18,102,1,0,0,0,20,107,
+        1,0,0,0,22,116,1,0,0,0,24,124,1,0,0,0,26,138,1,0,0,0,28,140,1,0,
+        0,0,30,149,1,0,0,0,32,170,1,0,0,0,34,36,3,2,1,0,35,34,1,0,0,0,36,
+        39,1,0,0,0,37,35,1,0,0,0,37,38,1,0,0,0,38,40,1,0,0,0,39,37,1,0,0,
+        0,40,41,5,0,0,1,41,1,1,0,0,0,42,49,3,6,3,0,43,49,3,12,6,0,44,49,
+        3,14,7,0,45,49,3,16,8,0,46,49,3,18,9,0,47,49,3,4,2,0,48,42,1,0,0,
+        0,48,43,1,0,0,0,48,44,1,0,0,0,48,45,1,0,0,0,48,46,1,0,0,0,48,47,
+        1,0,0,0,49,3,1,0,0,0,50,51,5,27,0,0,51,52,5,4,0,0,52,53,3,22,11,
+        0,53,54,5,9,0,0,54,5,1,0,0,0,55,58,3,8,4,0,56,58,3,10,5,0,57,55,
+        1,0,0,0,57,56,1,0,0,0,58,7,1,0,0,0,59,60,5,1,0,0,60,61,5,27,0,0,
+        61,62,5,4,0,0,62,63,3,22,11,0,63,64,5,9,0,0,64,9,1,0,0,0,65,66,5,
+        2,0,0,66,67,5,27,0,0,67,68,5,4,0,0,68,69,5,26,0,0,69,70,5,9,0,0,
+        70,11,1,0,0,0,71,72,5,14,0,0,72,73,5,10,0,0,73,74,5,27,0,0,74,75,
+        5,11,0,0,75,76,5,9,0,0,76,13,1,0,0,0,77,78,5,15,0,0,78,81,5,10,0,
+        0,79,82,3,22,11,0,80,82,5,26,0,0,81,79,1,0,0,0,81,80,1,0,0,0,82,
+        83,1,0,0,0,83,84,5,11,0,0,84,85,5,9,0,0,85,15,1,0,0,0,86,87,5,16,
+        0,0,87,88,3,28,14,0,88,91,3,20,10,0,89,90,5,17,0,0,90,92,3,20,10,
+        0,91,89,1,0,0,0,91,92,1,0,0,0,92,99,1,0,0,0,93,94,5,18,0,0,94,95,
+        3,28,14,0,95,96,3,20,10,0,96,98,1,0,0,0,97,93,1,0,0,0,98,101,1,0,
+        0,0,99,97,1,0,0,0,99,100,1,0,0,0,100,17,1,0,0,0,101,99,1,0,0,0,102,
+        103,5,20,0,0,103,104,3,28,14,0,104,105,5,19,0,0,105,106,3,20,10,
+        0,106,19,1,0,0,0,107,111,5,12,0,0,108,110,3,2,1,0,109,108,1,0,0,
+        0,110,113,1,0,0,0,111,109,1,0,0,0,111,112,1,0,0,0,112,114,1,0,0,
+        0,113,111,1,0,0,0,114,115,5,13,0,0,115,21,1,0,0,0,116,121,3,24,12,
+        0,117,118,7,0,0,0,118,120,3,24,12,0,119,117,1,0,0,0,120,123,1,0,
+        0,0,121,119,1,0,0,0,121,122,1,0,0,0,122,23,1,0,0,0,123,121,1,0,0,
+        0,124,129,3,26,13,0,125,126,7,1,0,0,126,128,3,26,13,0,127,125,1,
+        0,0,0,128,131,1,0,0,0,129,127,1,0,0,0,129,130,1,0,0,0,130,25,1,0,
+        0,0,131,129,1,0,0,0,132,139,5,28,0,0,133,139,5,27,0,0,134,135,5,
+        10,0,0,135,136,3,22,11,0,136,137,5,11,0,0,137,139,1,0,0,0,138,132,
+        1,0,0,0,138,133,1,0,0,0,138,134,1,0,0,0,139,27,1,0,0,0,140,145,3,
+        30,15,0,141,142,7,2,0,0,142,144,3,30,15,0,143,141,1,0,0,0,144,147,
+        1,0,0,0,145,143,1,0,0,0,145,146,1,0,0,0,146,29,1,0,0,0,147,145,1,
+        0,0,0,148,150,5,23,0,0,149,148,1,0,0,0,149,150,1,0,0,0,150,156,1,
+        0,0,0,151,157,3,32,16,0,152,153,5,10,0,0,153,154,3,28,14,0,154,155,
+        5,11,0,0,155,157,1,0,0,0,156,151,1,0,0,0,156,152,1,0,0,0,157,31,
+        1,0,0,0,158,159,3,22,11,0,159,160,5,3,0,0,160,161,3,22,11,0,161,
+        171,1,0,0,0,162,163,3,22,11,0,163,164,5,24,0,0,164,165,3,22,11,0,
+        165,171,1,0,0,0,166,167,3,22,11,0,167,168,5,25,0,0,168,169,3,22,
+        11,0,169,171,1,0,0,0,170,158,1,0,0,0,170,162,1,0,0,0,170,166,1,0,
+        0,0,171,33,1,0,0,0,14,37,48,57,81,91,99,111,121,129,138,145,149,
+        156,170
     ]
 
-class SimpleCParser ( Parser ):
+class cmaismenosParser ( Parser ):
 
-    grammarFileName = "SimpleC.g4"
+    grammarFileName = "cmaismenos.g4"
 
     atn = ATNDeserializer().deserialize(serializedATN())
 
@@ -81,14 +83,15 @@ class SimpleCParser ( Parser ):
     literalNames = [ "<INVALID>", "'i'", "'s'", "'=='", "'='", "'+'", "'-'", 
                      "'*'", "'/'", "';'", "'('", "')'", "'{'", "'}'", "'rd'", 
                      "'pt'", "'if'", "'el'", "'ei'", "'do'", "'wl'", "'and'", 
-                     "'or'", "'!'", "'<'" ]
+                     "'or'", "'!'", "'<'", "'>'" ]
 
     symbolicNames = [ "<INVALID>", "TIPO_INT", "TIPO_STR", "IGUAL", "ATRIBUICAO", 
                       "SOMA", "SUBTRACAO", "MULTIPLICACAO", "DIVISAO", "PONTO_VIRGULA", 
                       "ABRE_PARENTESES", "FECHA_PARENTESES", "ABRE_CHAVES", 
                       "FECHA_CHAVES", "RD", "PT", "IF", "EL", "EI", "DO", 
-                      "WL", "AND", "OR", "NOT", "MENOR", "STRING", "ID", 
-                      "NUMERO", "ESPACO" ]
+                      "WL", "AND", "OR", "NOT", "MENOR", "MAIOR", "STRING", 
+                      "ID", "NUMERO", "COMENTARIO_LINHA", "COMENTARIO_BLOCO", 
+                      "ESPACO" ]
 
     RULE_programa = 0
     RULE_comando = 1
@@ -138,10 +141,13 @@ class SimpleCParser ( Parser ):
     OR=22
     NOT=23
     MENOR=24
-    STRING=25
-    ID=26
-    NUMERO=27
-    ESPACO=28
+    MAIOR=25
+    STRING=26
+    ID=27
+    NUMERO=28
+    COMENTARIO_LINHA=29
+    COMENTARIO_BLOCO=30
+    ESPACO=31
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
@@ -160,17 +166,17 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def EOF(self):
-            return self.getToken(SimpleCParser.EOF, 0)
+            return self.getToken(cmaismenosParser.EOF, 0)
 
         def comando(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.ComandoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.ComandoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.ComandoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.ComandoContext,i)
 
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_programa
+            return cmaismenosParser.RULE_programa
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterPrograma" ):
@@ -180,12 +186,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitPrograma" ):
                 listener.exitPrograma(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitPrograma" ):
+                return visitor.visitPrograma(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def programa(self):
 
-        localctx = SimpleCParser.ProgramaContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.ProgramaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 0, self.RULE_programa)
         self._la = 0 # Token type
         try:
@@ -193,7 +205,7 @@ class SimpleCParser ( Parser ):
             self.state = 37
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 68272134) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 135380998) != 0):
                 self.state = 34
                 self.comando()
                 self.state = 39
@@ -201,7 +213,7 @@ class SimpleCParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 40
-            self.match(SimpleCParser.EOF)
+            self.match(cmaismenosParser.EOF)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -219,31 +231,31 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def declaracao(self):
-            return self.getTypedRuleContext(SimpleCParser.DeclaracaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.DeclaracaoContext,0)
 
 
         def entrada(self):
-            return self.getTypedRuleContext(SimpleCParser.EntradaContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.EntradaContext,0)
 
 
         def saida(self):
-            return self.getTypedRuleContext(SimpleCParser.SaidaContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.SaidaContext,0)
 
 
         def condicional(self):
-            return self.getTypedRuleContext(SimpleCParser.CondicionalContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.CondicionalContext,0)
 
 
         def repeticao(self):
-            return self.getTypedRuleContext(SimpleCParser.RepeticaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.RepeticaoContext,0)
 
 
         def atribuicao(self):
-            return self.getTypedRuleContext(SimpleCParser.AtribuicaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.AtribuicaoContext,0)
 
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_comando
+            return cmaismenosParser.RULE_comando
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterComando" ):
@@ -253,12 +265,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitComando" ):
                 listener.exitComando(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComando" ):
+                return visitor.visitComando(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def comando(self):
 
-        localctx = SimpleCParser.ComandoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.ComandoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 2, self.RULE_comando)
         try:
             self.state = 48
@@ -289,7 +307,7 @@ class SimpleCParser ( Parser ):
                 self.state = 46
                 self.repeticao()
                 pass
-            elif token in [26]:
+            elif token in [27]:
                 self.enterOuterAlt(localctx, 6)
                 self.state = 47
                 self.atribuicao()
@@ -314,20 +332,20 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def ID(self):
-            return self.getToken(SimpleCParser.ID, 0)
+            return self.getToken(cmaismenosParser.ID, 0)
 
         def ATRIBUICAO(self):
-            return self.getToken(SimpleCParser.ATRIBUICAO, 0)
+            return self.getToken(cmaismenosParser.ATRIBUICAO, 0)
 
         def expressao(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoContext,0)
 
 
         def PONTO_VIRGULA(self):
-            return self.getToken(SimpleCParser.PONTO_VIRGULA, 0)
+            return self.getToken(cmaismenosParser.PONTO_VIRGULA, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_atribuicao
+            return cmaismenosParser.RULE_atribuicao
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterAtribuicao" ):
@@ -337,23 +355,29 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitAtribuicao" ):
                 listener.exitAtribuicao(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitAtribuicao" ):
+                return visitor.visitAtribuicao(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def atribuicao(self):
 
-        localctx = SimpleCParser.AtribuicaoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.AtribuicaoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 4, self.RULE_atribuicao)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 50
-            self.match(SimpleCParser.ID)
+            self.match(cmaismenosParser.ID)
             self.state = 51
-            self.match(SimpleCParser.ATRIBUICAO)
+            self.match(cmaismenosParser.ATRIBUICAO)
             self.state = 52
             self.expressao()
             self.state = 53
-            self.match(SimpleCParser.PONTO_VIRGULA)
+            self.match(cmaismenosParser.PONTO_VIRGULA)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -371,15 +395,15 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def declaracaoInt(self):
-            return self.getTypedRuleContext(SimpleCParser.DeclaracaoIntContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.DeclaracaoIntContext,0)
 
 
         def declaracaoStr(self):
-            return self.getTypedRuleContext(SimpleCParser.DeclaracaoStrContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.DeclaracaoStrContext,0)
 
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_declaracao
+            return cmaismenosParser.RULE_declaracao
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDeclaracao" ):
@@ -389,12 +413,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitDeclaracao" ):
                 listener.exitDeclaracao(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDeclaracao" ):
+                return visitor.visitDeclaracao(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def declaracao(self):
 
-        localctx = SimpleCParser.DeclaracaoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.DeclaracaoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 6, self.RULE_declaracao)
         try:
             self.state = 57
@@ -430,23 +460,23 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def TIPO_INT(self):
-            return self.getToken(SimpleCParser.TIPO_INT, 0)
+            return self.getToken(cmaismenosParser.TIPO_INT, 0)
 
         def ID(self):
-            return self.getToken(SimpleCParser.ID, 0)
+            return self.getToken(cmaismenosParser.ID, 0)
 
         def ATRIBUICAO(self):
-            return self.getToken(SimpleCParser.ATRIBUICAO, 0)
+            return self.getToken(cmaismenosParser.ATRIBUICAO, 0)
 
         def expressao(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoContext,0)
 
 
         def PONTO_VIRGULA(self):
-            return self.getToken(SimpleCParser.PONTO_VIRGULA, 0)
+            return self.getToken(cmaismenosParser.PONTO_VIRGULA, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_declaracaoInt
+            return cmaismenosParser.RULE_declaracaoInt
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDeclaracaoInt" ):
@@ -456,25 +486,31 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitDeclaracaoInt" ):
                 listener.exitDeclaracaoInt(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDeclaracaoInt" ):
+                return visitor.visitDeclaracaoInt(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def declaracaoInt(self):
 
-        localctx = SimpleCParser.DeclaracaoIntContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.DeclaracaoIntContext(self, self._ctx, self.state)
         self.enterRule(localctx, 8, self.RULE_declaracaoInt)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 59
-            self.match(SimpleCParser.TIPO_INT)
+            self.match(cmaismenosParser.TIPO_INT)
             self.state = 60
-            self.match(SimpleCParser.ID)
+            self.match(cmaismenosParser.ID)
             self.state = 61
-            self.match(SimpleCParser.ATRIBUICAO)
+            self.match(cmaismenosParser.ATRIBUICAO)
             self.state = 62
             self.expressao()
             self.state = 63
-            self.match(SimpleCParser.PONTO_VIRGULA)
+            self.match(cmaismenosParser.PONTO_VIRGULA)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -492,22 +528,22 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def TIPO_STR(self):
-            return self.getToken(SimpleCParser.TIPO_STR, 0)
+            return self.getToken(cmaismenosParser.TIPO_STR, 0)
 
         def ID(self):
-            return self.getToken(SimpleCParser.ID, 0)
+            return self.getToken(cmaismenosParser.ID, 0)
 
         def ATRIBUICAO(self):
-            return self.getToken(SimpleCParser.ATRIBUICAO, 0)
+            return self.getToken(cmaismenosParser.ATRIBUICAO, 0)
 
         def STRING(self):
-            return self.getToken(SimpleCParser.STRING, 0)
+            return self.getToken(cmaismenosParser.STRING, 0)
 
         def PONTO_VIRGULA(self):
-            return self.getToken(SimpleCParser.PONTO_VIRGULA, 0)
+            return self.getToken(cmaismenosParser.PONTO_VIRGULA, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_declaracaoStr
+            return cmaismenosParser.RULE_declaracaoStr
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterDeclaracaoStr" ):
@@ -517,25 +553,31 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitDeclaracaoStr" ):
                 listener.exitDeclaracaoStr(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitDeclaracaoStr" ):
+                return visitor.visitDeclaracaoStr(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def declaracaoStr(self):
 
-        localctx = SimpleCParser.DeclaracaoStrContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.DeclaracaoStrContext(self, self._ctx, self.state)
         self.enterRule(localctx, 10, self.RULE_declaracaoStr)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 65
-            self.match(SimpleCParser.TIPO_STR)
+            self.match(cmaismenosParser.TIPO_STR)
             self.state = 66
-            self.match(SimpleCParser.ID)
+            self.match(cmaismenosParser.ID)
             self.state = 67
-            self.match(SimpleCParser.ATRIBUICAO)
+            self.match(cmaismenosParser.ATRIBUICAO)
             self.state = 68
-            self.match(SimpleCParser.STRING)
+            self.match(cmaismenosParser.STRING)
             self.state = 69
-            self.match(SimpleCParser.PONTO_VIRGULA)
+            self.match(cmaismenosParser.PONTO_VIRGULA)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -553,22 +595,22 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def RD(self):
-            return self.getToken(SimpleCParser.RD, 0)
+            return self.getToken(cmaismenosParser.RD, 0)
 
         def ABRE_PARENTESES(self):
-            return self.getToken(SimpleCParser.ABRE_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.ABRE_PARENTESES, 0)
 
         def ID(self):
-            return self.getToken(SimpleCParser.ID, 0)
+            return self.getToken(cmaismenosParser.ID, 0)
 
         def FECHA_PARENTESES(self):
-            return self.getToken(SimpleCParser.FECHA_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.FECHA_PARENTESES, 0)
 
         def PONTO_VIRGULA(self):
-            return self.getToken(SimpleCParser.PONTO_VIRGULA, 0)
+            return self.getToken(cmaismenosParser.PONTO_VIRGULA, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_entrada
+            return cmaismenosParser.RULE_entrada
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterEntrada" ):
@@ -578,25 +620,31 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitEntrada" ):
                 listener.exitEntrada(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitEntrada" ):
+                return visitor.visitEntrada(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def entrada(self):
 
-        localctx = SimpleCParser.EntradaContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.EntradaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 12, self.RULE_entrada)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 71
-            self.match(SimpleCParser.RD)
+            self.match(cmaismenosParser.RD)
             self.state = 72
-            self.match(SimpleCParser.ABRE_PARENTESES)
+            self.match(cmaismenosParser.ABRE_PARENTESES)
             self.state = 73
-            self.match(SimpleCParser.ID)
+            self.match(cmaismenosParser.ID)
             self.state = 74
-            self.match(SimpleCParser.FECHA_PARENTESES)
+            self.match(cmaismenosParser.FECHA_PARENTESES)
             self.state = 75
-            self.match(SimpleCParser.PONTO_VIRGULA)
+            self.match(cmaismenosParser.PONTO_VIRGULA)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -614,26 +662,26 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def PT(self):
-            return self.getToken(SimpleCParser.PT, 0)
+            return self.getToken(cmaismenosParser.PT, 0)
 
         def ABRE_PARENTESES(self):
-            return self.getToken(SimpleCParser.ABRE_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.ABRE_PARENTESES, 0)
 
         def FECHA_PARENTESES(self):
-            return self.getToken(SimpleCParser.FECHA_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.FECHA_PARENTESES, 0)
 
         def PONTO_VIRGULA(self):
-            return self.getToken(SimpleCParser.PONTO_VIRGULA, 0)
+            return self.getToken(cmaismenosParser.PONTO_VIRGULA, 0)
 
         def expressao(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoContext,0)
 
 
         def STRING(self):
-            return self.getToken(SimpleCParser.STRING, 0)
+            return self.getToken(cmaismenosParser.STRING, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_saida
+            return cmaismenosParser.RULE_saida
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterSaida" ):
@@ -643,37 +691,43 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitSaida" ):
                 listener.exitSaida(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitSaida" ):
+                return visitor.visitSaida(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def saida(self):
 
-        localctx = SimpleCParser.SaidaContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.SaidaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 14, self.RULE_saida)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 77
-            self.match(SimpleCParser.PT)
+            self.match(cmaismenosParser.PT)
             self.state = 78
-            self.match(SimpleCParser.ABRE_PARENTESES)
+            self.match(cmaismenosParser.ABRE_PARENTESES)
             self.state = 81
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [10, 26, 27]:
+            if token in [10, 27, 28]:
                 self.state = 79
                 self.expressao()
                 pass
-            elif token in [25]:
+            elif token in [26]:
                 self.state = 80
-                self.match(SimpleCParser.STRING)
+                self.match(cmaismenosParser.STRING)
                 pass
             else:
                 raise NoViableAltException(self)
 
             self.state = 83
-            self.match(SimpleCParser.FECHA_PARENTESES)
+            self.match(cmaismenosParser.FECHA_PARENTESES)
             self.state = 84
-            self.match(SimpleCParser.PONTO_VIRGULA)
+            self.match(cmaismenosParser.PONTO_VIRGULA)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -691,33 +745,33 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def IF(self):
-            return self.getToken(SimpleCParser.IF, 0)
+            return self.getToken(cmaismenosParser.IF, 0)
 
         def expressaoLogica(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.ExpressaoLogicaContext)
+                return self.getTypedRuleContexts(cmaismenosParser.ExpressaoLogicaContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.ExpressaoLogicaContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.ExpressaoLogicaContext,i)
 
 
         def bloco(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.BlocoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.BlocoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.BlocoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.BlocoContext,i)
 
 
         def EL(self):
-            return self.getToken(SimpleCParser.EL, 0)
+            return self.getToken(cmaismenosParser.EL, 0)
 
         def EI(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.EI)
+                return self.getTokens(cmaismenosParser.EI)
             else:
-                return self.getToken(SimpleCParser.EI, i)
+                return self.getToken(cmaismenosParser.EI, i)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_condicional
+            return cmaismenosParser.RULE_condicional
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterCondicional" ):
@@ -727,18 +781,24 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitCondicional" ):
                 listener.exitCondicional(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitCondicional" ):
+                return visitor.visitCondicional(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def condicional(self):
 
-        localctx = SimpleCParser.CondicionalContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.CondicionalContext(self, self._ctx, self.state)
         self.enterRule(localctx, 16, self.RULE_condicional)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 86
-            self.match(SimpleCParser.IF)
+            self.match(cmaismenosParser.IF)
             self.state = 87
             self.expressaoLogica()
             self.state = 88
@@ -748,7 +808,7 @@ class SimpleCParser ( Parser ):
             _la = self._input.LA(1)
             if _la==17:
                 self.state = 89
-                self.match(SimpleCParser.EL)
+                self.match(cmaismenosParser.EL)
                 self.state = 90
                 self.bloco()
 
@@ -758,7 +818,7 @@ class SimpleCParser ( Parser ):
             _la = self._input.LA(1)
             while _la==18:
                 self.state = 93
-                self.match(SimpleCParser.EI)
+                self.match(cmaismenosParser.EI)
                 self.state = 94
                 self.expressaoLogica()
                 self.state = 95
@@ -784,21 +844,21 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def WL(self):
-            return self.getToken(SimpleCParser.WL, 0)
+            return self.getToken(cmaismenosParser.WL, 0)
 
         def expressaoLogica(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoLogicaContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoLogicaContext,0)
 
 
         def DO(self):
-            return self.getToken(SimpleCParser.DO, 0)
+            return self.getToken(cmaismenosParser.DO, 0)
 
         def bloco(self):
-            return self.getTypedRuleContext(SimpleCParser.BlocoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.BlocoContext,0)
 
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_repeticao
+            return cmaismenosParser.RULE_repeticao
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterRepeticao" ):
@@ -808,21 +868,27 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitRepeticao" ):
                 listener.exitRepeticao(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitRepeticao" ):
+                return visitor.visitRepeticao(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def repeticao(self):
 
-        localctx = SimpleCParser.RepeticaoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.RepeticaoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 18, self.RULE_repeticao)
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 102
-            self.match(SimpleCParser.WL)
+            self.match(cmaismenosParser.WL)
             self.state = 103
             self.expressaoLogica()
             self.state = 104
-            self.match(SimpleCParser.DO)
+            self.match(cmaismenosParser.DO)
             self.state = 105
             self.bloco()
         except RecognitionException as re:
@@ -842,20 +908,20 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def ABRE_CHAVES(self):
-            return self.getToken(SimpleCParser.ABRE_CHAVES, 0)
+            return self.getToken(cmaismenosParser.ABRE_CHAVES, 0)
 
         def FECHA_CHAVES(self):
-            return self.getToken(SimpleCParser.FECHA_CHAVES, 0)
+            return self.getToken(cmaismenosParser.FECHA_CHAVES, 0)
 
         def comando(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.ComandoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.ComandoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.ComandoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.ComandoContext,i)
 
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_bloco
+            return cmaismenosParser.RULE_bloco
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterBloco" ):
@@ -865,22 +931,28 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitBloco" ):
                 listener.exitBloco(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitBloco" ):
+                return visitor.visitBloco(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def bloco(self):
 
-        localctx = SimpleCParser.BlocoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.BlocoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_bloco)
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
             self.state = 107
-            self.match(SimpleCParser.ABRE_CHAVES)
+            self.match(cmaismenosParser.ABRE_CHAVES)
             self.state = 111
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 68272134) != 0):
+            while (((_la) & ~0x3f) == 0 and ((1 << _la) & 135380998) != 0):
                 self.state = 108
                 self.comando()
                 self.state = 113
@@ -888,7 +960,7 @@ class SimpleCParser ( Parser ):
                 _la = self._input.LA(1)
 
             self.state = 114
-            self.match(SimpleCParser.FECHA_CHAVES)
+            self.match(cmaismenosParser.FECHA_CHAVES)
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -907,25 +979,25 @@ class SimpleCParser ( Parser ):
 
         def termo(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.TermoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.TermoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.TermoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.TermoContext,i)
 
 
         def SOMA(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.SOMA)
+                return self.getTokens(cmaismenosParser.SOMA)
             else:
-                return self.getToken(SimpleCParser.SOMA, i)
+                return self.getToken(cmaismenosParser.SOMA, i)
 
         def SUBTRACAO(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.SUBTRACAO)
+                return self.getTokens(cmaismenosParser.SUBTRACAO)
             else:
-                return self.getToken(SimpleCParser.SUBTRACAO, i)
+                return self.getToken(cmaismenosParser.SUBTRACAO, i)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_expressao
+            return cmaismenosParser.RULE_expressao
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterExpressao" ):
@@ -935,12 +1007,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitExpressao" ):
                 listener.exitExpressao(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressao" ):
+                return visitor.visitExpressao(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def expressao(self):
 
-        localctx = SimpleCParser.ExpressaoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.ExpressaoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_expressao)
         self._la = 0 # Token type
         try:
@@ -982,25 +1060,25 @@ class SimpleCParser ( Parser ):
 
         def fator(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.FatorContext)
+                return self.getTypedRuleContexts(cmaismenosParser.FatorContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.FatorContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.FatorContext,i)
 
 
         def MULTIPLICACAO(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.MULTIPLICACAO)
+                return self.getTokens(cmaismenosParser.MULTIPLICACAO)
             else:
-                return self.getToken(SimpleCParser.MULTIPLICACAO, i)
+                return self.getToken(cmaismenosParser.MULTIPLICACAO, i)
 
         def DIVISAO(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.DIVISAO)
+                return self.getTokens(cmaismenosParser.DIVISAO)
             else:
-                return self.getToken(SimpleCParser.DIVISAO, i)
+                return self.getToken(cmaismenosParser.DIVISAO, i)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_termo
+            return cmaismenosParser.RULE_termo
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTermo" ):
@@ -1010,12 +1088,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitTermo" ):
                 listener.exitTermo(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTermo" ):
+                return visitor.visitTermo(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def termo(self):
 
-        localctx = SimpleCParser.TermoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.TermoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 24, self.RULE_termo)
         self._la = 0 # Token type
         try:
@@ -1056,23 +1140,23 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def NUMERO(self):
-            return self.getToken(SimpleCParser.NUMERO, 0)
+            return self.getToken(cmaismenosParser.NUMERO, 0)
 
         def ID(self):
-            return self.getToken(SimpleCParser.ID, 0)
+            return self.getToken(cmaismenosParser.ID, 0)
 
         def ABRE_PARENTESES(self):
-            return self.getToken(SimpleCParser.ABRE_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.ABRE_PARENTESES, 0)
 
         def expressao(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoContext,0)
 
 
         def FECHA_PARENTESES(self):
-            return self.getToken(SimpleCParser.FECHA_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.FECHA_PARENTESES, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_fator
+            return cmaismenosParser.RULE_fator
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterFator" ):
@@ -1082,35 +1166,41 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitFator" ):
                 listener.exitFator(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitFator" ):
+                return visitor.visitFator(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def fator(self):
 
-        localctx = SimpleCParser.FatorContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.FatorContext(self, self._ctx, self.state)
         self.enterRule(localctx, 26, self.RULE_fator)
         try:
             self.state = 138
             self._errHandler.sync(self)
             token = self._input.LA(1)
-            if token in [27]:
+            if token in [28]:
                 self.enterOuterAlt(localctx, 1)
                 self.state = 132
-                self.match(SimpleCParser.NUMERO)
+                self.match(cmaismenosParser.NUMERO)
                 pass
-            elif token in [26]:
+            elif token in [27]:
                 self.enterOuterAlt(localctx, 2)
                 self.state = 133
-                self.match(SimpleCParser.ID)
+                self.match(cmaismenosParser.ID)
                 pass
             elif token in [10]:
                 self.enterOuterAlt(localctx, 3)
                 self.state = 134
-                self.match(SimpleCParser.ABRE_PARENTESES)
+                self.match(cmaismenosParser.ABRE_PARENTESES)
                 self.state = 135
                 self.expressao()
                 self.state = 136
-                self.match(SimpleCParser.FECHA_PARENTESES)
+                self.match(cmaismenosParser.FECHA_PARENTESES)
                 pass
             else:
                 raise NoViableAltException(self)
@@ -1133,25 +1223,25 @@ class SimpleCParser ( Parser ):
 
         def termoLogico(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.TermoLogicoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.TermoLogicoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.TermoLogicoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.TermoLogicoContext,i)
 
 
         def AND(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.AND)
+                return self.getTokens(cmaismenosParser.AND)
             else:
-                return self.getToken(SimpleCParser.AND, i)
+                return self.getToken(cmaismenosParser.AND, i)
 
         def OR(self, i:int=None):
             if i is None:
-                return self.getTokens(SimpleCParser.OR)
+                return self.getTokens(cmaismenosParser.OR)
             else:
-                return self.getToken(SimpleCParser.OR, i)
+                return self.getToken(cmaismenosParser.OR, i)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_expressaoLogica
+            return cmaismenosParser.RULE_expressaoLogica
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterExpressaoLogica" ):
@@ -1161,12 +1251,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitExpressaoLogica" ):
                 listener.exitExpressaoLogica(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitExpressaoLogica" ):
+                return visitor.visitExpressaoLogica(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def expressaoLogica(self):
 
-        localctx = SimpleCParser.ExpressaoLogicaContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.ExpressaoLogicaContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_expressaoLogica)
         self._la = 0 # Token type
         try:
@@ -1207,24 +1303,24 @@ class SimpleCParser ( Parser ):
             self.parser = parser
 
         def comparacao(self):
-            return self.getTypedRuleContext(SimpleCParser.ComparacaoContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ComparacaoContext,0)
 
 
         def ABRE_PARENTESES(self):
-            return self.getToken(SimpleCParser.ABRE_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.ABRE_PARENTESES, 0)
 
         def expressaoLogica(self):
-            return self.getTypedRuleContext(SimpleCParser.ExpressaoLogicaContext,0)
+            return self.getTypedRuleContext(cmaismenosParser.ExpressaoLogicaContext,0)
 
 
         def FECHA_PARENTESES(self):
-            return self.getToken(SimpleCParser.FECHA_PARENTESES, 0)
+            return self.getToken(cmaismenosParser.FECHA_PARENTESES, 0)
 
         def NOT(self):
-            return self.getToken(SimpleCParser.NOT, 0)
+            return self.getToken(cmaismenosParser.NOT, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_termoLogico
+            return cmaismenosParser.RULE_termoLogico
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterTermoLogico" ):
@@ -1234,12 +1330,18 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitTermoLogico" ):
                 listener.exitTermoLogico(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitTermoLogico" ):
+                return visitor.visitTermoLogico(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def termoLogico(self):
 
-        localctx = SimpleCParser.TermoLogicoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.TermoLogicoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_termoLogico)
         self._la = 0 # Token type
         try:
@@ -1249,7 +1351,7 @@ class SimpleCParser ( Parser ):
             _la = self._input.LA(1)
             if _la==23:
                 self.state = 148
-                self.match(SimpleCParser.NOT)
+                self.match(cmaismenosParser.NOT)
 
 
             self.state = 156
@@ -1262,11 +1364,11 @@ class SimpleCParser ( Parser ):
 
             elif la_ == 2:
                 self.state = 152
-                self.match(SimpleCParser.ABRE_PARENTESES)
+                self.match(cmaismenosParser.ABRE_PARENTESES)
                 self.state = 153
                 self.expressaoLogica()
                 self.state = 154
-                self.match(SimpleCParser.FECHA_PARENTESES)
+                self.match(cmaismenosParser.FECHA_PARENTESES)
                 pass
 
 
@@ -1288,19 +1390,22 @@ class SimpleCParser ( Parser ):
 
         def expressao(self, i:int=None):
             if i is None:
-                return self.getTypedRuleContexts(SimpleCParser.ExpressaoContext)
+                return self.getTypedRuleContexts(cmaismenosParser.ExpressaoContext)
             else:
-                return self.getTypedRuleContext(SimpleCParser.ExpressaoContext,i)
+                return self.getTypedRuleContext(cmaismenosParser.ExpressaoContext,i)
 
 
         def IGUAL(self):
-            return self.getToken(SimpleCParser.IGUAL, 0)
+            return self.getToken(cmaismenosParser.IGUAL, 0)
 
         def MENOR(self):
-            return self.getToken(SimpleCParser.MENOR, 0)
+            return self.getToken(cmaismenosParser.MENOR, 0)
+
+        def MAIOR(self):
+            return self.getToken(cmaismenosParser.MAIOR, 0)
 
         def getRuleIndex(self):
-            return SimpleCParser.RULE_comparacao
+            return cmaismenosParser.RULE_comparacao
 
         def enterRule(self, listener:ParseTreeListener):
             if hasattr( listener, "enterComparacao" ):
@@ -1310,15 +1415,21 @@ class SimpleCParser ( Parser ):
             if hasattr( listener, "exitComparacao" ):
                 listener.exitComparacao(self)
 
+        def accept(self, visitor:ParseTreeVisitor):
+            if hasattr( visitor, "visitComparacao" ):
+                return visitor.visitComparacao(self)
+            else:
+                return visitor.visitChildren(self)
+
 
 
 
     def comparacao(self):
 
-        localctx = SimpleCParser.ComparacaoContext(self, self._ctx, self.state)
+        localctx = cmaismenosParser.ComparacaoContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_comparacao)
         try:
-            self.state = 166
+            self.state = 170
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
             if la_ == 1:
@@ -1326,7 +1437,7 @@ class SimpleCParser ( Parser ):
                 self.state = 158
                 self.expressao()
                 self.state = 159
-                self.match(SimpleCParser.IGUAL)
+                self.match(cmaismenosParser.IGUAL)
                 self.state = 160
                 self.expressao()
                 pass
@@ -1336,8 +1447,18 @@ class SimpleCParser ( Parser ):
                 self.state = 162
                 self.expressao()
                 self.state = 163
-                self.match(SimpleCParser.MENOR)
+                self.match(cmaismenosParser.MENOR)
                 self.state = 164
+                self.expressao()
+                pass
+
+            elif la_ == 3:
+                self.enterOuterAlt(localctx, 3)
+                self.state = 166
+                self.expressao()
+                self.state = 167
+                self.match(cmaismenosParser.MAIOR)
+                self.state = 168
                 self.expressao()
                 pass
 

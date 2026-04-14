@@ -2,8 +2,8 @@ import logging
 from antlr4 import *
 from antlr4.error.ErrorListener import ErrorListener
 from antlr4.tree import Trees
-from SimpleCLexer import SimpleCLexer
-from SimpleCParser import SimpleCParser
+from cmaismenosLexer import cmaismenosLexer
+from cmaismenosParser import cmaismenosParser
 
 # Configurar logging
 logging.basicConfig(filename='parser.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -50,7 +50,7 @@ def generate_dot(tree, parser, filename='ast.dot'):
 
 # Processar arquivo-fonte
 stream = FileStream("entrada.cmm", encoding="utf-8")
-lexer = SimpleCLexer(stream)
+lexer = cmaismenosLexer(stream)
 
 # Adicionar listener de erro customizado
 lexer.removeErrorListeners()
@@ -60,15 +60,15 @@ lexer.addErrorListener(CustomErrorListener())
 tokens = CommonTokenStream(lexer)
 tokens.fill()
 
-print("Tokens gerados:")
+# print("Tokens gerados:")
 for token in tokens.tokens:
     if token.type != Token.EOF:
         token_type = lexer.symbolicNames[token.type] if token.type < len(lexer.symbolicNames) else str(token.type)
-        print(f"<{token_type}, '{token.text}', {token.line}, {token.column}>")
+        # print(f"<{token_type}, '{token.text}', {token.line}, {token.column}>")
         logging.info(f"Token: <{token_type}, '{token.text}', {token.line}, {token.column}>")
 
 # Parsing
-parser = SimpleCParser(tokens)
+parser = cmaismenosParser(tokens)
 parser.removeErrorListeners()
 parser.addErrorListener(CustomErrorListener())
 
@@ -81,3 +81,9 @@ print(tree.toStringTree(recog=parser))
 
 # Gerar AST em DOT
 generate_dot(tree, parser)
+
+print("\n============ EXECUTANDO ================")
+from interpretador import Interpretador
+evaluator = Interpretador()
+evaluator.visit(tree)
+print("========================================")
