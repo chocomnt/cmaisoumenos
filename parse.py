@@ -1,3 +1,4 @@
+import sys
 import logging
 from antlr4 import *
 from antlr4.error.ErrorListener import ErrorListener
@@ -10,11 +11,19 @@ logging.basicConfig(filename='parser.log', level=logging.INFO, format='%(asctime
 
 class CustomErrorListener(ErrorListener):
     def syntaxError(self, recognizer, offendingSymbol, line, column, msg, e):
-        # Distinguir entre erro léxico e sintático
-        if 'token recognition error' in msg or 'extraneous input' in msg:
+        # Lista de palavras reservadas da linguagem cmaismenos
+        palavras_reservadas = ['i', 's', 'rd', 'pt', 'if', 'el', 'ei', 'do', 'wl', 'and', 'or', '!']
+        token_text = offendingSymbol.text if offendingSymbol is not None else ""
+
+        # Identificar se o erro ocorreu por usar uma palavra reservada no lugar de um ID
+        if ("expecting ID" in msg or "missing ID" in msg) and token_text in palavras_reservadas:
+            error_type = "ERRO SINTÁTICO"
+            msg = f"A palavra '{token_text}' é reservada da linguagem e não pode ser usada como nome de variável."
+        elif 'token recognition error' in msg or 'extraneous input' in msg:
             error_type = "ERRO LÉXICO"
         else:
             error_type = "ERRO SINTÁTICO"
+            
         error_msg = f"{error_type} [Linha {line}, Coluna {column}]: {msg}"
         print(error_msg)
         logging.error(error_msg)
@@ -75,6 +84,10 @@ parser.addErrorListener(CustomErrorListener())
 logging.info("Iniciando parsing...")
 tree = parser.programa()
 logging.info("Parsing concluído.")
+
+if parser.getNumberOfSyntaxErrors() > 0:
+    print("\nErro: Análise sintática falhou. Corrija o código e tente novamente.")
+    sys.exit(1)
 
 print("\nÁrvore de sintaxe textual:")
 print(tree.toStringTree(recog=parser))
