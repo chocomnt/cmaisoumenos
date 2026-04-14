@@ -1,2 +1,21 @@
-int x = 1 + 2 + 3;
-float y = 10;
+i x = 1 + 2 + 3;
+i y = 2 * 3;
+i z = 10 / 2;
+s nome = "matheus";
+
+rd(x);
+pt("Olá");
+pt(x + y);
+
+if x == 6 and y < 10 or ! z == 5 {
+    i w = 10;
+} el {
+    i w = 20;
+} ei x == 7 {
+    i w = 30;
+}
+
+wl x < 10 do {
+    x = x + 1;
+    pt(x);
+}

@@ -4,30 +4,80 @@ grammar SimpleC;
 // REGRAS SINTÁTICAS (PARSER) - Letra minúscula
 // ==========================================
 
-// O programa é uma ou mais declarações seguidas do fim do arquivo (EOF)
-programa: declaracao+ EOF;
+// O programa é uma sequência de comandos
+programa: comando* EOF;
 
-// Uma declaração tem um tipo, um ID, um '=', uma expressão matemática e um ';'
-declaracao: TIPO ID ATRIBUICAO expressao PONTO_VIRGULA;
+// Comandos: declarações, entrada/saída, controle de fluxo, atribuições
+comando: declaracao | entrada | saida | condicional | repeticao | atribuicao;
 
-// Uma expressão é um número, podendo ser somado a outros números
-expressao: NUMERO (SOMA NUMERO)*;
+// Atribuição simples
+atribuicao: ID ATRIBUICAO expressao PONTO_VIRGULA;
+
+// Declarações
+declaracao: declaracaoInt | declaracaoStr;
+declaracaoInt: TIPO_INT ID ATRIBUICAO expressao PONTO_VIRGULA;
+declaracaoStr: TIPO_STR ID ATRIBUICAO STRING PONTO_VIRGULA;
+
+// Entrada/saída
+entrada: RD ABRE_PARENTESES ID FECHA_PARENTESES PONTO_VIRGULA;
+saida: PT ABRE_PARENTESES (expressao | STRING) FECHA_PARENTESES PONTO_VIRGULA;
+
+// Controle de fluxo
+condicional: IF expressaoLogica bloco (EL bloco)? (EI expressaoLogica bloco)*;
+repeticao: WL expressaoLogica DO bloco;
+
+// Bloco de comandos
+bloco: ABRE_CHAVES comando* FECHA_CHAVES;
+
+// Expressões aritméticas com parênteses
+expressao: termo ((SOMA | SUBTRACAO) termo)*;
+termo: fator ((MULTIPLICACAO | DIVISAO) fator)*;
+fator: NUMERO | ID | ABRE_PARENTESES expressao FECHA_PARENTESES;
+
+// Expressões lógicas
+expressaoLogica: termoLogico ((AND | OR) termoLogico)*;
+termoLogico: NOT? (comparacao | ABRE_PARENTESES expressaoLogica FECHA_PARENTESES);
+comparacao: expressao IGUAL expressao | expressao MENOR expressao;  // Adicionando < para while
 
 // ==========================================
 // REGRAS LÉXICAS (LEXER) - Letra maiúscula
 // ==========================================
 
-TIPO: 'i' | 's';
+TIPO_INT: 'i';
+TIPO_STR: 's';
+IGUAL: '==';
 ATRIBUICAO: '=';
 SOMA: '+';
 SUBTRACAO: '-';
+MULTIPLICACAO: '*';
+DIVISAO: '/';
 PONTO_VIRGULA: ';';
+ABRE_PARENTESES: '(';
+FECHA_PARENTESES: ')';
+ABRE_CHAVES: '{';
+FECHA_CHAVES: '}';
 
-// Identificadores (nomes de variáveis): começam com letra ou _, seguidos de letras, _ ou números
+// Entrada/saída
+RD: 'rd';
+PT: 'pt';
+
+// Controle de fluxo
+IF: 'if';
+EL: 'el';
+EI: 'ei';
+DO: 'do';
+WL: 'wl';
+
+// Operadores lógicos
+AND: 'and';
+OR: 'or';
+NOT: '!';
+MENOR: '<';
+
+// Literais
+STRING: '"' (~["\r\n])* '"';
 ID: [a-zA-Z_][a-zA-Z_0-9]*;
-
-// Números inteiros
 NUMERO: [0-9]+;
 
-// Regra especial: O ANTLR deve ignorar espaços, tabs e quebras de linha
+// Espaços
 ESPACO: [ \t\r\n]+ -> skip;
