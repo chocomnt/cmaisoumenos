@@ -1,0 +1,28 @@
+#!/usr/bin/env -S /home/kauan/Documentos/Projetos/cmaismenos/antlr/bin/python /home/kauan/Documentos/Projetos/cmaismenos/cmaisoumenos/compilador.py
+
+# Arquivo de teste para a interface do compilador e a analise semantica.
+
+i x = 10;
+i y = 3;
+i soma = x + y;
+i produto = x * y;
+i contador = 0;
+s nome = "cmaismenos";
+
+pt("=== TESTE DO COMPILADOR ===");
+pt(nome);
+pt(soma);
+pt(produto);
+
+if soma > produto {
+    pt("soma maior");
+} el {
+    pt("produto maior ou igual");
+}
+
+wl contador < 3 do {
+    pt(contador);
+    contador = contador + 1;
+}
+
+pt("=== FIM DO TESTE ===");

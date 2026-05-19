@@ -153,17 +153,17 @@ def compilar(argumentos):
     logging.info("Iniciando compilação do arquivo %s.", argumentos.arquivo)
     analisador_sintatico, erros_lexicos, erros_sintaticos = criar_analisadores(argumentos.arquivo)
 
+    if erros_lexicos.tem_erros():
+        print("\nErro: análise léxica falhou. Corrija o código e tente novamente.")
+        return 1
+
     print("\n============ ANÁLISE SINTÁTICA ================")
     logging.info("Iniciando análise sintática.")
     arvore = analisador_sintatico.programa()
     logging.info("Análise sintática concluída.")
 
-    if (
-        erros_lexicos.tem_erros()
-        or erros_sintaticos.tem_erros()
-        or analisador_sintatico.getNumberOfSyntaxErrors() > 0
-    ):
-        print("\nErro: análise léxica ou sintática falhou. Corrija o código e tente novamente.")
+    if erros_sintaticos.tem_erros() or analisador_sintatico.getNumberOfSyntaxErrors() > 0:
+        print("\nErro: análise sintática falhou. Corrija o código e tente novamente.")
         return 1
 
     print("Análise léxica e sintática concluída sem erros.")

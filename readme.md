@@ -129,3 +129,56 @@ ERRO SEMÂNTICO: SEM-001 [Linha 2, Coluna 3] Lexema: 'y' | Contexto: uso de vari
 ## Documentação da Análise Semântica
 
 A explicação completa da implementação está em `analise_semantica.md`.
+
+• A interface do compilador é o arquivo compilador.py:1.
+
+  No projeto, ela é o “ponto de entrada” do compilador. Em vez de você chamar manualmente cada parte, ela organiza tudo em ordem:
+
+  1. lê um arquivo .cmm;
+  2. faz análise léxica;
+  3. faz análise sintática;
+  4. faz análise semântica;
+  5. gera log;
+  6. gera a árvore sintática em .dot;
+  7. executa o programa se não houver erro.
+
+  Usos principais
+
+  Rodar o programa padrão entrada.cmm:
+
+  python compilador.py
+
+  Rodar outro arquivo .cmm:
+
+  python compilador.py teste_compilador.cmm
+
+  Fazer apenas as análises, sem executar:
+
+  python compilador.py teste_erros_semanticos.cmm --somente-analisar
+
+  Mostrar a árvore sintática no terminal:
+
+  python compilador.py entrada.cmm --mostrar-arvore
+
+  Não gerar o arquivo arvore.dot:
+
+  python compilador.py entrada.cmm --sem-arvore-dot
+
+  Escolher o nome do arquivo .dot:
+
+  python compilador.py entrada.cmm --arvore-dot minha_arvore.dot
+
+  Escolher o nome do log:
+
+  python compilador.py entrada.cmm --log meu_log.log
+
+  Ver todas as opções:
+
+  python compilador.py --ajuda
+
+  Rodar um .cmm diretamente, se ele tiver a primeira linha especial e permissão de execução:
+
+  ./teste_compilador.cmm
+
+  No fundo, a interface serve para transformar o projeto em uma ferramenta mais parecida com um compilador real: você passa um arquivo fonte e ela controla todo
+  o fluxo.

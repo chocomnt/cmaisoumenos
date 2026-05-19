@@ -1,0 +1,7 @@
+#!/usr/bin/env -S /home/kauan/Documentos/Projetos/cmaismenos/antlr/bin/python /home/kauan/Documentos/Projetos/cmaismenos/cmaisoumenos/compilador.py
+
+# Este arquivo testa erro lexico.
+# O caractere @ nao pertence a linguagem.
+
+i x = 10;
+pt(@);
