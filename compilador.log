@@ -1806,3 +1806,676 @@
 2026-05-19 12:36:11,841 - ERROR - SEM-006 [Linha 25, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
 2026-05-19 12:36:11,841 - ERROR - SEM-006 [Linha 30, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
 2026-05-19 12:36:11,841 - INFO - Análise semântica concluída.
+2026-05-19 13:31:59,564 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 13:31:59,567 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 13:31:59,567 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 13:31:59,567 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 13:31:59,567 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 13:31:59,567 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 13:31:59,567 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 13:31:59,567 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 13:31:59,568 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 13:31:59,568 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 13:31:59,568 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 13:31:59,568 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 13:31:59,568 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 13:31:59,568 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 13:31:59,568 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 13:31:59,568 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 13:31:59,568 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 13:31:59,568 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 13:31:59,568 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 13:31:59,568 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 13:31:59,568 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 13:31:59,568 - INFO - Token: <TIPO_INT, 'i', 10, 0>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'x', 10, 2>
+2026-05-19 13:31:59,568 - INFO - Token: <ATRIBUICAO, '=', 10, 4>
+2026-05-19 13:31:59,568 - INFO - Token: <NUMERO, '20', 10, 6>
+2026-05-19 13:31:59,568 - INFO - Token: <PONTO_VIRGULA, ';', 10, 8>
+2026-05-19 13:31:59,568 - INFO - Token: <PT, 'pt', 12, 0>
+2026-05-19 13:31:59,568 - INFO - Token: <ABRE_PARENTESES, '(', 12, 2>
+2026-05-19 13:31:59,568 - INFO - Token: <ID, 'nome', 12, 3>
+2026-05-19 13:31:59,568 - INFO - Token: <SOMA, '+', 12, 8>
+2026-05-19 13:31:59,568 - INFO - Token: <NUMERO, '2', 12, 10>
+2026-05-19 13:31:59,568 - INFO - Token: <FECHA_PARENTESES, ')', 12, 11>
+2026-05-19 13:31:59,569 - INFO - Token: <PONTO_VIRGULA, ';', 12, 12>
+2026-05-19 13:31:59,569 - INFO - Token: <IF, 'if', 14, 0>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'x', 14, 3>
+2026-05-19 13:31:59,569 - INFO - Token: <IGUAL, '==', 14, 5>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'nome', 14, 8>
+2026-05-19 13:31:59,569 - INFO - Token: <ABRE_CHAVES, '{', 14, 13>
+2026-05-19 13:31:59,569 - INFO - Token: <PT, 'pt', 15, 4>
+2026-05-19 13:31:59,569 - INFO - Token: <ABRE_PARENTESES, '(', 15, 6>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'x', 15, 7>
+2026-05-19 13:31:59,569 - INFO - Token: <FECHA_PARENTESES, ')', 15, 8>
+2026-05-19 13:31:59,569 - INFO - Token: <PONTO_VIRGULA, ';', 15, 9>
+2026-05-19 13:31:59,569 - INFO - Token: <FECHA_CHAVES, '}', 16, 0>
+2026-05-19 13:31:59,569 - INFO - Token: <IF, 'if', 18, 0>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'nome', 18, 3>
+2026-05-19 13:31:59,569 - INFO - Token: <MENOR, '<', 18, 8>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'x', 18, 10>
+2026-05-19 13:31:59,569 - INFO - Token: <ABRE_CHAVES, '{', 18, 12>
+2026-05-19 13:31:59,569 - INFO - Token: <PT, 'pt', 19, 4>
+2026-05-19 13:31:59,569 - INFO - Token: <ABRE_PARENTESES, '(', 19, 6>
+2026-05-19 13:31:59,569 - INFO - Token: <ID, 'nome', 19, 7>
+2026-05-19 13:31:59,569 - INFO - Token: <FECHA_PARENTESES, ')', 19, 11>
+2026-05-19 13:31:59,569 - INFO - Token: <PONTO_VIRGULA, ';', 19, 12>
+2026-05-19 13:31:59,569 - INFO - Token: <FECHA_CHAVES, '}', 20, 0>
+2026-05-19 13:31:59,569 - INFO - Token: <TIPO_INT, 'i', 22, 0>
+2026-05-19 13:31:59,570 - INFO - Token: <ID, 'abc', 22, 2>
+2026-05-19 13:31:59,570 - INFO - Token: <ATRIBUICAO, '=', 22, 6>
+2026-05-19 13:31:59,570 - INFO - Token: <ID, 'x', 22, 8>
+2026-05-19 13:31:59,570 - INFO - Token: <DIVISAO, '/', 22, 10>
+2026-05-19 13:31:59,570 - INFO - Token: <NUMERO, '0', 22, 12>
+2026-05-19 13:31:59,570 - INFO - Token: <PT, 'pt', 23, 0>
+2026-05-19 13:31:59,570 - INFO - Token: <ABRE_PARENTESES, '(', 23, 2>
+2026-05-19 13:31:59,570 - INFO - Token: <ID, 'abc', 23, 3>
+2026-05-19 13:31:59,570 - INFO - Token: <FECHA_PARENTESES, ')', 23, 6>
+2026-05-19 13:31:59,570 - INFO - Iniciando análise sintática.
+2026-05-19 13:31:59,574 - ERROR - ERRO SINTÁTICO [Linha 23, Coluna 0] Lexema: 'pt' | Mensagem: faltando ';' at 'pt'
+2026-05-19 13:31:59,574 - ERROR - ERRO SINTÁTICO [Linha 24, Coluna 0] Lexema: '<EOF>' | Mensagem: faltando ';' at '<EOF>'
+2026-05-19 13:31:59,574 - INFO - Análise sintática concluída.
+2026-05-19 13:32:32,899 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 13:32:32,902 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 13:32:32,902 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 13:32:32,902 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 13:32:32,902 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 13:32:32,902 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 13:32:32,902 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 13:32:32,902 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 13:32:32,902 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 13:32:32,902 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 13:32:32,902 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 13:32:32,902 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 13:32:32,902 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 13:32:32,902 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 13:32:32,902 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 13:32:32,902 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 13:32:32,902 - INFO - Token: <TIPO_INT, 'i', 10, 0>
+2026-05-19 13:32:32,902 - INFO - Token: <ID, 'x', 10, 2>
+2026-05-19 13:32:32,903 - INFO - Token: <ATRIBUICAO, '=', 10, 4>
+2026-05-19 13:32:32,903 - INFO - Token: <NUMERO, '20', 10, 6>
+2026-05-19 13:32:32,903 - INFO - Token: <PONTO_VIRGULA, ';', 10, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <PT, 'pt', 12, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_PARENTESES, '(', 12, 2>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'nome', 12, 3>
+2026-05-19 13:32:32,903 - INFO - Token: <SOMA, '+', 12, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <NUMERO, '2', 12, 10>
+2026-05-19 13:32:32,903 - INFO - Token: <FECHA_PARENTESES, ')', 12, 11>
+2026-05-19 13:32:32,903 - INFO - Token: <PONTO_VIRGULA, ';', 12, 12>
+2026-05-19 13:32:32,903 - INFO - Token: <IF, 'if', 14, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'x', 14, 3>
+2026-05-19 13:32:32,903 - INFO - Token: <IGUAL, '==', 14, 5>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'nome', 14, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_CHAVES, '{', 14, 13>
+2026-05-19 13:32:32,903 - INFO - Token: <PT, 'pt', 15, 4>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_PARENTESES, '(', 15, 6>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'x', 15, 7>
+2026-05-19 13:32:32,903 - INFO - Token: <FECHA_PARENTESES, ')', 15, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <PONTO_VIRGULA, ';', 15, 9>
+2026-05-19 13:32:32,903 - INFO - Token: <FECHA_CHAVES, '}', 16, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <IF, 'if', 18, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'nome', 18, 3>
+2026-05-19 13:32:32,903 - INFO - Token: <MENOR, '<', 18, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'x', 18, 10>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_CHAVES, '{', 18, 12>
+2026-05-19 13:32:32,903 - INFO - Token: <PT, 'pt', 19, 4>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_PARENTESES, '(', 19, 6>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'nome', 19, 7>
+2026-05-19 13:32:32,903 - INFO - Token: <FECHA_PARENTESES, ')', 19, 11>
+2026-05-19 13:32:32,903 - INFO - Token: <PONTO_VIRGULA, ';', 19, 12>
+2026-05-19 13:32:32,903 - INFO - Token: <FECHA_CHAVES, '}', 20, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <TIPO_INT, 'i', 22, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'abc', 22, 2>
+2026-05-19 13:32:32,903 - INFO - Token: <ATRIBUICAO, '=', 22, 6>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'x', 22, 8>
+2026-05-19 13:32:32,903 - INFO - Token: <DIVISAO, '/', 22, 10>
+2026-05-19 13:32:32,903 - INFO - Token: <NUMERO, '0', 22, 12>
+2026-05-19 13:32:32,903 - INFO - Token: <PT, 'pt', 23, 0>
+2026-05-19 13:32:32,903 - INFO - Token: <ABRE_PARENTESES, '(', 23, 2>
+2026-05-19 13:32:32,903 - INFO - Token: <ID, 'abc', 23, 3>
+2026-05-19 13:32:32,904 - INFO - Token: <FECHA_PARENTESES, ')', 23, 6>
+2026-05-19 13:32:32,904 - INFO - Iniciando análise sintática.
+2026-05-19 13:32:32,907 - ERROR - ERRO SINTÁTICO [Linha 23, Coluna 0] Lexema: 'pt' | Mensagem: faltando ';' at 'pt'
+2026-05-19 13:32:32,907 - ERROR - ERRO SINTÁTICO [Linha 24, Coluna 0] Lexema: '<EOF>' | Mensagem: faltando ';' at '<EOF>'
+2026-05-19 13:32:32,907 - INFO - Análise sintática concluída.
+2026-05-19 13:32:46,579 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 13:32:46,581 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 13:32:46,581 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 13:32:46,581 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 13:32:46,581 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 13:32:46,581 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 13:32:46,581 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 13:32:46,581 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 13:32:46,581 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 13:32:46,581 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 13:32:46,581 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 13:32:46,581 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 13:32:46,581 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 13:32:46,581 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 13:32:46,581 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 13:32:46,581 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 13:32:46,581 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 13:32:46,581 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 13:32:46,581 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 13:32:46,582 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 13:32:46,582 - INFO - Token: <TIPO_INT, 'i', 10, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'x', 10, 2>
+2026-05-19 13:32:46,582 - INFO - Token: <ATRIBUICAO, '=', 10, 4>
+2026-05-19 13:32:46,582 - INFO - Token: <NUMERO, '20', 10, 6>
+2026-05-19 13:32:46,582 - INFO - Token: <PONTO_VIRGULA, ';', 10, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <PT, 'pt', 12, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <ABRE_PARENTESES, '(', 12, 2>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'nome', 12, 3>
+2026-05-19 13:32:46,582 - INFO - Token: <SOMA, '+', 12, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <NUMERO, '2', 12, 10>
+2026-05-19 13:32:46,582 - INFO - Token: <FECHA_PARENTESES, ')', 12, 11>
+2026-05-19 13:32:46,582 - INFO - Token: <PONTO_VIRGULA, ';', 12, 12>
+2026-05-19 13:32:46,582 - INFO - Token: <IF, 'if', 14, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'x', 14, 3>
+2026-05-19 13:32:46,582 - INFO - Token: <IGUAL, '==', 14, 5>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'nome', 14, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <ABRE_CHAVES, '{', 14, 13>
+2026-05-19 13:32:46,582 - INFO - Token: <PT, 'pt', 15, 4>
+2026-05-19 13:32:46,582 - INFO - Token: <ABRE_PARENTESES, '(', 15, 6>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'x', 15, 7>
+2026-05-19 13:32:46,582 - INFO - Token: <FECHA_PARENTESES, ')', 15, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <PONTO_VIRGULA, ';', 15, 9>
+2026-05-19 13:32:46,582 - INFO - Token: <FECHA_CHAVES, '}', 16, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <IF, 'if', 18, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'nome', 18, 3>
+2026-05-19 13:32:46,582 - INFO - Token: <MENOR, '<', 18, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'x', 18, 10>
+2026-05-19 13:32:46,582 - INFO - Token: <ABRE_CHAVES, '{', 18, 12>
+2026-05-19 13:32:46,582 - INFO - Token: <PT, 'pt', 19, 4>
+2026-05-19 13:32:46,582 - INFO - Token: <ABRE_PARENTESES, '(', 19, 6>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'nome', 19, 7>
+2026-05-19 13:32:46,582 - INFO - Token: <FECHA_PARENTESES, ')', 19, 11>
+2026-05-19 13:32:46,582 - INFO - Token: <PONTO_VIRGULA, ';', 19, 12>
+2026-05-19 13:32:46,582 - INFO - Token: <FECHA_CHAVES, '}', 20, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <TIPO_INT, 'i', 22, 0>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'abc', 22, 2>
+2026-05-19 13:32:46,582 - INFO - Token: <ATRIBUICAO, '=', 22, 6>
+2026-05-19 13:32:46,582 - INFO - Token: <ID, 'x', 22, 8>
+2026-05-19 13:32:46,582 - INFO - Token: <DIVISAO, '/', 22, 10>
+2026-05-19 13:32:46,583 - INFO - Token: <NUMERO, '0', 22, 12>
+2026-05-19 13:32:46,583 - INFO - Token: <PONTO_VIRGULA, ';', 22, 13>
+2026-05-19 13:32:46,583 - INFO - Token: <PT, 'pt', 23, 0>
+2026-05-19 13:32:46,583 - INFO - Token: <ABRE_PARENTESES, '(', 23, 2>
+2026-05-19 13:32:46,583 - INFO - Token: <ID, 'abc', 23, 3>
+2026-05-19 13:32:46,583 - INFO - Token: <FECHA_PARENTESES, ')', 23, 6>
+2026-05-19 13:32:46,583 - INFO - Token: <PONTO_VIRGULA, ';', 23, 7>
+2026-05-19 13:32:46,583 - INFO - Iniciando análise sintática.
+2026-05-19 13:32:46,586 - INFO - Análise sintática concluída.
+2026-05-19 13:32:46,586 - INFO - Iniciando análise semântica.
+2026-05-19 13:32:46,586 - ERROR - Análise semântica encontrou 7 erro(s).
+2026-05-19 13:32:46,586 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 13:32:46,586 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 13:32:46,586 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 13:32:46,586 - ERROR - SEM-002 [Linha 10, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 13:32:46,586 - ERROR - SEM-005 [Linha 12, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 13:32:46,586 - ERROR - SEM-006 [Linha 14, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 13:32:46,586 - ERROR - SEM-006 [Linha 18, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 13:32:46,586 - INFO - Análise semântica concluída.
+2026-05-19 14:02:07,443 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 14:02:07,446 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 14:02:07,446 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 14:02:07,446 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 14:02:07,446 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 14:02:07,446 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 14:02:07,446 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 14:02:07,446 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 14:02:07,446 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 14:02:07,446 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 14:02:07,447 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 14:02:07,447 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 14:02:07,447 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 14:02:07,447 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'x', 10, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ATRIBUICAO, '=', 10, 2>
+2026-05-19 14:02:07,447 - INFO - Token: <NUMERO, '10', 10, 4>
+2026-05-19 14:02:07,447 - INFO - Token: <DIVISAO, '/', 10, 7>
+2026-05-19 14:02:07,447 - INFO - Token: <NUMERO, '0', 10, 9>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 10, 10>
+2026-05-19 14:02:07,447 - INFO - Token: <TIPO_INT, 'i', 12, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'x', 12, 2>
+2026-05-19 14:02:07,447 - INFO - Token: <ATRIBUICAO, '=', 12, 4>
+2026-05-19 14:02:07,447 - INFO - Token: <NUMERO, '20', 12, 6>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 12, 8>
+2026-05-19 14:02:07,447 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'nome', 14, 3>
+2026-05-19 14:02:07,447 - INFO - Token: <SOMA, '+', 14, 8>
+2026-05-19 14:02:07,447 - INFO - Token: <NUMERO, '2', 14, 10>
+2026-05-19 14:02:07,447 - INFO - Token: <FECHA_PARENTESES, ')', 14, 11>
+2026-05-19 14:02:07,447 - INFO - Token: <PONTO_VIRGULA, ';', 14, 12>
+2026-05-19 14:02:07,447 - INFO - Token: <IF, 'if', 16, 0>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'x', 16, 3>
+2026-05-19 14:02:07,447 - INFO - Token: <IGUAL, '==', 16, 5>
+2026-05-19 14:02:07,447 - INFO - Token: <ID, 'nome', 16, 8>
+2026-05-19 14:02:07,447 - INFO - Token: <ABRE_CHAVES, '{', 16, 13>
+2026-05-19 14:02:07,448 - INFO - Token: <PT, 'pt', 17, 4>
+2026-05-19 14:02:07,448 - INFO - Token: <ABRE_PARENTESES, '(', 17, 6>
+2026-05-19 14:02:07,448 - INFO - Token: <ID, 'x', 17, 7>
+2026-05-19 14:02:07,448 - INFO - Token: <FECHA_PARENTESES, ')', 17, 8>
+2026-05-19 14:02:07,448 - INFO - Token: <PONTO_VIRGULA, ';', 17, 9>
+2026-05-19 14:02:07,448 - INFO - Token: <FECHA_CHAVES, '}', 18, 0>
+2026-05-19 14:02:07,448 - INFO - Token: <IF, 'if', 20, 0>
+2026-05-19 14:02:07,448 - INFO - Token: <ID, 'nome', 20, 3>
+2026-05-19 14:02:07,448 - INFO - Token: <MENOR, '<', 20, 8>
+2026-05-19 14:02:07,448 - INFO - Token: <ID, 'x', 20, 10>
+2026-05-19 14:02:07,448 - INFO - Token: <ABRE_CHAVES, '{', 20, 12>
+2026-05-19 14:02:07,448 - INFO - Token: <PT, 'pt', 21, 4>
+2026-05-19 14:02:07,448 - INFO - Token: <ABRE_PARENTESES, '(', 21, 6>
+2026-05-19 14:02:07,448 - INFO - Token: <ID, 'nome', 21, 7>
+2026-05-19 14:02:07,448 - INFO - Token: <FECHA_PARENTESES, ')', 21, 11>
+2026-05-19 14:02:07,448 - INFO - Token: <PONTO_VIRGULA, ';', 21, 12>
+2026-05-19 14:02:07,448 - INFO - Token: <FECHA_CHAVES, '}', 22, 0>
+2026-05-19 14:02:07,448 - INFO - Iniciando análise sintática.
+2026-05-19 14:02:07,451 - INFO - Análise sintática concluída.
+2026-05-19 14:02:07,451 - INFO - Iniciando análise semântica.
+2026-05-19 14:02:07,451 - ERROR - Análise semântica encontrou 8 erro(s).
+2026-05-19 14:02:07,451 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 14:02:07,451 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:02:07,451 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:02:07,452 - ERROR - SEM-007 [Linha 10, Coluna 9] Lexema: '0' | Contexto: termo aritmético | Mensagem: Divisão por zero não é permitida. | Sugestão: Use um divisor diferente de zero.
+2026-05-19 14:02:07,452 - ERROR - SEM-002 [Linha 12, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 14:02:07,452 - ERROR - SEM-005 [Linha 14, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 14:02:07,452 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 14:02:07,452 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 14:02:07,452 - INFO - Análise semântica concluída.
+2026-05-19 14:02:12,749 - INFO - Iniciando compilação do arquivo teste_compilador.cmm.
+2026-05-19 14:02:12,754 - INFO - Token: <TIPO_INT, 'i', 5, 0>
+2026-05-19 14:02:12,754 - INFO - Token: <ID, 'x', 5, 2>
+2026-05-19 14:02:12,754 - INFO - Token: <ATRIBUICAO, '=', 5, 4>
+2026-05-19 14:02:12,754 - INFO - Token: <NUMERO, '10', 5, 6>
+2026-05-19 14:02:12,754 - INFO - Token: <PONTO_VIRGULA, ';', 5, 8>
+2026-05-19 14:02:12,754 - INFO - Token: <TIPO_INT, 'i', 6, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'y', 6, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <ATRIBUICAO, '=', 6, 4>
+2026-05-19 14:02:12,755 - INFO - Token: <NUMERO, '3', 6, 6>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 6, 7>
+2026-05-19 14:02:12,755 - INFO - Token: <TIPO_INT, 'i', 7, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'soma', 7, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <ATRIBUICAO, '=', 7, 7>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'x', 7, 9>
+2026-05-19 14:02:12,755 - INFO - Token: <SOMA, '+', 7, 11>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'y', 7, 13>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 7, 14>
+2026-05-19 14:02:12,755 - INFO - Token: <TIPO_INT, 'i', 8, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'produto', 8, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <ATRIBUICAO, '=', 8, 10>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'x', 8, 12>
+2026-05-19 14:02:12,755 - INFO - Token: <MULTIPLICACAO, '*', 8, 14>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'y', 8, 16>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 8, 17>
+2026-05-19 14:02:12,755 - INFO - Token: <TIPO_INT, 'i', 9, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'contador', 9, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <ATRIBUICAO, '=', 9, 11>
+2026-05-19 14:02:12,755 - INFO - Token: <NUMERO, '0', 9, 13>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 9, 14>
+2026-05-19 14:02:12,755 - INFO - Token: <TIPO_STR, 's', 10, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ID, 'nome', 10, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <ATRIBUICAO, '=', 10, 7>
+2026-05-19 14:02:12,755 - INFO - Token: <STRING, '"cmaismenos"', 10, 9>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 10, 21>
+2026-05-19 14:02:12,755 - INFO - Token: <PT, 'pt', 12, 0>
+2026-05-19 14:02:12,755 - INFO - Token: <ABRE_PARENTESES, '(', 12, 2>
+2026-05-19 14:02:12,755 - INFO - Token: <STRING, '"=== TESTE DO COMPILADOR ==="', 12, 3>
+2026-05-19 14:02:12,755 - INFO - Token: <FECHA_PARENTESES, ')', 12, 32>
+2026-05-19 14:02:12,755 - INFO - Token: <PONTO_VIRGULA, ';', 12, 33>
+2026-05-19 14:02:12,755 - INFO - Token: <PT, 'pt', 13, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_PARENTESES, '(', 13, 2>
+2026-05-19 14:02:12,756 - INFO - Token: <ID, 'nome', 13, 3>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_PARENTESES, ')', 13, 7>
+2026-05-19 14:02:12,756 - INFO - Token: <PONTO_VIRGULA, ';', 13, 8>
+2026-05-19 14:02:12,756 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:02:12,756 - INFO - Token: <ID, 'soma', 14, 3>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_PARENTESES, ')', 14, 7>
+2026-05-19 14:02:12,756 - INFO - Token: <PONTO_VIRGULA, ';', 14, 8>
+2026-05-19 14:02:12,756 - INFO - Token: <PT, 'pt', 15, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_PARENTESES, '(', 15, 2>
+2026-05-19 14:02:12,756 - INFO - Token: <ID, 'produto', 15, 3>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_PARENTESES, ')', 15, 10>
+2026-05-19 14:02:12,756 - INFO - Token: <PONTO_VIRGULA, ';', 15, 11>
+2026-05-19 14:02:12,756 - INFO - Token: <IF, 'if', 17, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <ID, 'soma', 17, 3>
+2026-05-19 14:02:12,756 - INFO - Token: <MAIOR, '>', 17, 8>
+2026-05-19 14:02:12,756 - INFO - Token: <ID, 'produto', 17, 10>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_CHAVES, '{', 17, 18>
+2026-05-19 14:02:12,756 - INFO - Token: <PT, 'pt', 18, 4>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_PARENTESES, '(', 18, 6>
+2026-05-19 14:02:12,756 - INFO - Token: <STRING, '"soma maior"', 18, 7>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_PARENTESES, ')', 18, 19>
+2026-05-19 14:02:12,756 - INFO - Token: <PONTO_VIRGULA, ';', 18, 20>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_CHAVES, '}', 19, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <EL, 'el', 19, 2>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_CHAVES, '{', 19, 5>
+2026-05-19 14:02:12,756 - INFO - Token: <PT, 'pt', 20, 4>
+2026-05-19 14:02:12,756 - INFO - Token: <ABRE_PARENTESES, '(', 20, 6>
+2026-05-19 14:02:12,756 - INFO - Token: <STRING, '"produto maior ou igual"', 20, 7>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_PARENTESES, ')', 20, 31>
+2026-05-19 14:02:12,756 - INFO - Token: <PONTO_VIRGULA, ';', 20, 32>
+2026-05-19 14:02:12,756 - INFO - Token: <FECHA_CHAVES, '}', 21, 0>
+2026-05-19 14:02:12,756 - INFO - Token: <WL, 'wl', 23, 0>
+2026-05-19 14:02:12,757 - INFO - Token: <ID, 'contador', 23, 3>
+2026-05-19 14:02:12,757 - INFO - Token: <MENOR, '<', 23, 12>
+2026-05-19 14:02:12,757 - INFO - Token: <NUMERO, '3', 23, 14>
+2026-05-19 14:02:12,757 - INFO - Token: <DO, 'do', 23, 16>
+2026-05-19 14:02:12,757 - INFO - Token: <ABRE_CHAVES, '{', 23, 19>
+2026-05-19 14:02:12,757 - INFO - Token: <PT, 'pt', 24, 4>
+2026-05-19 14:02:12,757 - INFO - Token: <ABRE_PARENTESES, '(', 24, 6>
+2026-05-19 14:02:12,757 - INFO - Token: <ID, 'contador', 24, 7>
+2026-05-19 14:02:12,757 - INFO - Token: <FECHA_PARENTESES, ')', 24, 15>
+2026-05-19 14:02:12,757 - INFO - Token: <PONTO_VIRGULA, ';', 24, 16>
+2026-05-19 14:02:12,757 - INFO - Token: <ID, 'contador', 25, 4>
+2026-05-19 14:02:12,757 - INFO - Token: <ATRIBUICAO, '=', 25, 13>
+2026-05-19 14:02:12,757 - INFO - Token: <ID, 'contador', 25, 15>
+2026-05-19 14:02:12,757 - INFO - Token: <SOMA, '+', 25, 24>
+2026-05-19 14:02:12,757 - INFO - Token: <NUMERO, '1', 25, 26>
+2026-05-19 14:02:12,757 - INFO - Token: <PONTO_VIRGULA, ';', 25, 27>
+2026-05-19 14:02:12,757 - INFO - Token: <FECHA_CHAVES, '}', 26, 0>
+2026-05-19 14:02:12,757 - INFO - Token: <PT, 'pt', 28, 0>
+2026-05-19 14:02:12,757 - INFO - Token: <ABRE_PARENTESES, '(', 28, 2>
+2026-05-19 14:02:12,757 - INFO - Token: <STRING, '"=== FIM DO TESTE ==="', 28, 3>
+2026-05-19 14:02:12,757 - INFO - Token: <FECHA_PARENTESES, ')', 28, 25>
+2026-05-19 14:02:12,757 - INFO - Token: <PONTO_VIRGULA, ';', 28, 26>
+2026-05-19 14:02:12,757 - INFO - Iniciando análise sintática.
+2026-05-19 14:02:12,761 - INFO - Análise sintática concluída.
+2026-05-19 14:02:12,761 - INFO - Iniciando análise semântica.
+2026-05-19 14:02:12,761 - INFO - Análise semântica concluída sem erros.
+2026-05-19 14:02:12,761 - INFO - Análise semântica concluída.
+2026-05-19 14:02:58,587 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 14:02:58,590 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 14:02:58,590 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 14:02:58,590 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 14:02:58,590 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 14:02:58,590 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 14:02:58,590 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 14:02:58,590 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 14:02:58,590 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 14:02:58,590 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 14:02:58,590 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 14:02:58,590 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 14:02:58,590 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 14:02:58,590 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 14:02:58,590 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 14:02:58,590 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 14:02:58,591 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 14:02:58,591 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 14:02:58,591 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'x', 10, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ATRIBUICAO, '=', 10, 2>
+2026-05-19 14:02:58,591 - INFO - Token: <NUMERO, '10', 10, 4>
+2026-05-19 14:02:58,591 - INFO - Token: <DIVISAO, '/', 10, 7>
+2026-05-19 14:02:58,591 - INFO - Token: <NUMERO, '0', 10, 9>
+2026-05-19 14:02:58,591 - INFO - Token: <PONTO_VIRGULA, ';', 10, 10>
+2026-05-19 14:02:58,591 - INFO - Token: <TIPO_INT, 'i', 12, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'x', 12, 2>
+2026-05-19 14:02:58,591 - INFO - Token: <ATRIBUICAO, '=', 12, 4>
+2026-05-19 14:02:58,591 - INFO - Token: <NUMERO, '20', 12, 6>
+2026-05-19 14:02:58,591 - INFO - Token: <PONTO_VIRGULA, ';', 12, 8>
+2026-05-19 14:02:58,591 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'nome', 14, 3>
+2026-05-19 14:02:58,591 - INFO - Token: <SOMA, '+', 14, 8>
+2026-05-19 14:02:58,591 - INFO - Token: <NUMERO, '2', 14, 10>
+2026-05-19 14:02:58,591 - INFO - Token: <FECHA_PARENTESES, ')', 14, 11>
+2026-05-19 14:02:58,591 - INFO - Token: <PONTO_VIRGULA, ';', 14, 12>
+2026-05-19 14:02:58,591 - INFO - Token: <IF, 'if', 16, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'x', 16, 3>
+2026-05-19 14:02:58,591 - INFO - Token: <IGUAL, '==', 16, 5>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'nome', 16, 8>
+2026-05-19 14:02:58,591 - INFO - Token: <ABRE_CHAVES, '{', 16, 13>
+2026-05-19 14:02:58,591 - INFO - Token: <PT, 'pt', 17, 4>
+2026-05-19 14:02:58,591 - INFO - Token: <ABRE_PARENTESES, '(', 17, 6>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'x', 17, 7>
+2026-05-19 14:02:58,591 - INFO - Token: <FECHA_PARENTESES, ')', 17, 8>
+2026-05-19 14:02:58,591 - INFO - Token: <PONTO_VIRGULA, ';', 17, 9>
+2026-05-19 14:02:58,591 - INFO - Token: <FECHA_CHAVES, '}', 18, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <IF, 'if', 20, 0>
+2026-05-19 14:02:58,591 - INFO - Token: <ID, 'nome', 20, 3>
+2026-05-19 14:02:58,592 - INFO - Token: <MENOR, '<', 20, 8>
+2026-05-19 14:02:58,592 - INFO - Token: <ID, 'x', 20, 10>
+2026-05-19 14:02:58,592 - INFO - Token: <ABRE_CHAVES, '{', 20, 12>
+2026-05-19 14:02:58,592 - INFO - Token: <PT, 'pt', 21, 4>
+2026-05-19 14:02:58,592 - INFO - Token: <ABRE_PARENTESES, '(', 21, 6>
+2026-05-19 14:02:58,592 - INFO - Token: <ID, 'nome', 21, 7>
+2026-05-19 14:02:58,592 - INFO - Token: <FECHA_PARENTESES, ')', 21, 11>
+2026-05-19 14:02:58,592 - INFO - Token: <PONTO_VIRGULA, ';', 21, 12>
+2026-05-19 14:02:58,592 - INFO - Token: <FECHA_CHAVES, '}', 22, 0>
+2026-05-19 14:02:58,592 - INFO - Iniciando análise sintática.
+2026-05-19 14:02:58,595 - INFO - Análise sintática concluída.
+2026-05-19 14:02:58,595 - INFO - Iniciando análise semântica.
+2026-05-19 14:02:58,595 - ERROR - Análise semântica encontrou 8 erro(s).
+2026-05-19 14:02:58,595 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 14:02:58,595 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:02:58,595 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:02:58,595 - ERROR - SEM-007 [Linha 10, Coluna 9] Lexema: '0' | Contexto: termo aritmético | Mensagem: Divisão por zero não é permitida. | Sugestão: Use um divisor diferente de zero.
+2026-05-19 14:02:58,595 - ERROR - SEM-002 [Linha 12, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 14:02:58,595 - ERROR - SEM-005 [Linha 14, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 14:02:58,596 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 14:02:58,596 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 14:02:58,596 - INFO - Análise semântica concluída.
+2026-05-19 14:03:01,695 - INFO - Iniciando compilação do arquivo teste_compilador.cmm.
+2026-05-19 14:03:01,700 - INFO - Token: <TIPO_INT, 'i', 5, 0>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'x', 5, 2>
+2026-05-19 14:03:01,700 - INFO - Token: <ATRIBUICAO, '=', 5, 4>
+2026-05-19 14:03:01,700 - INFO - Token: <NUMERO, '10', 5, 6>
+2026-05-19 14:03:01,700 - INFO - Token: <PONTO_VIRGULA, ';', 5, 8>
+2026-05-19 14:03:01,700 - INFO - Token: <TIPO_INT, 'i', 6, 0>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'y', 6, 2>
+2026-05-19 14:03:01,700 - INFO - Token: <ATRIBUICAO, '=', 6, 4>
+2026-05-19 14:03:01,700 - INFO - Token: <NUMERO, '3', 6, 6>
+2026-05-19 14:03:01,700 - INFO - Token: <PONTO_VIRGULA, ';', 6, 7>
+2026-05-19 14:03:01,700 - INFO - Token: <TIPO_INT, 'i', 7, 0>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'soma', 7, 2>
+2026-05-19 14:03:01,700 - INFO - Token: <ATRIBUICAO, '=', 7, 7>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'x', 7, 9>
+2026-05-19 14:03:01,700 - INFO - Token: <SOMA, '+', 7, 11>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'y', 7, 13>
+2026-05-19 14:03:01,700 - INFO - Token: <PONTO_VIRGULA, ';', 7, 14>
+2026-05-19 14:03:01,700 - INFO - Token: <TIPO_INT, 'i', 8, 0>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'produto', 8, 2>
+2026-05-19 14:03:01,700 - INFO - Token: <ATRIBUICAO, '=', 8, 10>
+2026-05-19 14:03:01,700 - INFO - Token: <ID, 'x', 8, 12>
+2026-05-19 14:03:01,701 - INFO - Token: <MULTIPLICACAO, '*', 8, 14>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'y', 8, 16>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 8, 17>
+2026-05-19 14:03:01,701 - INFO - Token: <TIPO_INT, 'i', 9, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'contador', 9, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <ATRIBUICAO, '=', 9, 11>
+2026-05-19 14:03:01,701 - INFO - Token: <NUMERO, '0', 9, 13>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 9, 14>
+2026-05-19 14:03:01,701 - INFO - Token: <TIPO_STR, 's', 10, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'nome', 10, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <ATRIBUICAO, '=', 10, 7>
+2026-05-19 14:03:01,701 - INFO - Token: <STRING, '"cmaismenos"', 10, 9>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 10, 21>
+2026-05-19 14:03:01,701 - INFO - Token: <PT, 'pt', 12, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ABRE_PARENTESES, '(', 12, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <STRING, '"=== TESTE DO COMPILADOR ==="', 12, 3>
+2026-05-19 14:03:01,701 - INFO - Token: <FECHA_PARENTESES, ')', 12, 32>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 12, 33>
+2026-05-19 14:03:01,701 - INFO - Token: <PT, 'pt', 13, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ABRE_PARENTESES, '(', 13, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'nome', 13, 3>
+2026-05-19 14:03:01,701 - INFO - Token: <FECHA_PARENTESES, ')', 13, 7>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 13, 8>
+2026-05-19 14:03:01,701 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'soma', 14, 3>
+2026-05-19 14:03:01,701 - INFO - Token: <FECHA_PARENTESES, ')', 14, 7>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 14, 8>
+2026-05-19 14:03:01,701 - INFO - Token: <PT, 'pt', 15, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ABRE_PARENTESES, '(', 15, 2>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'produto', 15, 3>
+2026-05-19 14:03:01,701 - INFO - Token: <FECHA_PARENTESES, ')', 15, 10>
+2026-05-19 14:03:01,701 - INFO - Token: <PONTO_VIRGULA, ';', 15, 11>
+2026-05-19 14:03:01,701 - INFO - Token: <IF, 'if', 17, 0>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'soma', 17, 3>
+2026-05-19 14:03:01,701 - INFO - Token: <MAIOR, '>', 17, 8>
+2026-05-19 14:03:01,701 - INFO - Token: <ID, 'produto', 17, 10>
+2026-05-19 14:03:01,701 - INFO - Token: <ABRE_CHAVES, '{', 17, 18>
+2026-05-19 14:03:01,701 - INFO - Token: <PT, 'pt', 18, 4>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_PARENTESES, '(', 18, 6>
+2026-05-19 14:03:01,702 - INFO - Token: <STRING, '"soma maior"', 18, 7>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_PARENTESES, ')', 18, 19>
+2026-05-19 14:03:01,702 - INFO - Token: <PONTO_VIRGULA, ';', 18, 20>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_CHAVES, '}', 19, 0>
+2026-05-19 14:03:01,702 - INFO - Token: <EL, 'el', 19, 2>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_CHAVES, '{', 19, 5>
+2026-05-19 14:03:01,702 - INFO - Token: <PT, 'pt', 20, 4>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_PARENTESES, '(', 20, 6>
+2026-05-19 14:03:01,702 - INFO - Token: <STRING, '"produto maior ou igual"', 20, 7>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_PARENTESES, ')', 20, 31>
+2026-05-19 14:03:01,702 - INFO - Token: <PONTO_VIRGULA, ';', 20, 32>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_CHAVES, '}', 21, 0>
+2026-05-19 14:03:01,702 - INFO - Token: <WL, 'wl', 23, 0>
+2026-05-19 14:03:01,702 - INFO - Token: <ID, 'contador', 23, 3>
+2026-05-19 14:03:01,702 - INFO - Token: <MENOR, '<', 23, 12>
+2026-05-19 14:03:01,702 - INFO - Token: <NUMERO, '3', 23, 14>
+2026-05-19 14:03:01,702 - INFO - Token: <DO, 'do', 23, 16>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_CHAVES, '{', 23, 19>
+2026-05-19 14:03:01,702 - INFO - Token: <PT, 'pt', 24, 4>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_PARENTESES, '(', 24, 6>
+2026-05-19 14:03:01,702 - INFO - Token: <ID, 'contador', 24, 7>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_PARENTESES, ')', 24, 15>
+2026-05-19 14:03:01,702 - INFO - Token: <PONTO_VIRGULA, ';', 24, 16>
+2026-05-19 14:03:01,702 - INFO - Token: <ID, 'contador', 25, 4>
+2026-05-19 14:03:01,702 - INFO - Token: <ATRIBUICAO, '=', 25, 13>
+2026-05-19 14:03:01,702 - INFO - Token: <ID, 'contador', 25, 15>
+2026-05-19 14:03:01,702 - INFO - Token: <SOMA, '+', 25, 24>
+2026-05-19 14:03:01,702 - INFO - Token: <NUMERO, '1', 25, 26>
+2026-05-19 14:03:01,702 - INFO - Token: <PONTO_VIRGULA, ';', 25, 27>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_CHAVES, '}', 26, 0>
+2026-05-19 14:03:01,702 - INFO - Token: <PT, 'pt', 28, 0>
+2026-05-19 14:03:01,702 - INFO - Token: <ABRE_PARENTESES, '(', 28, 2>
+2026-05-19 14:03:01,702 - INFO - Token: <STRING, '"=== FIM DO TESTE ==="', 28, 3>
+2026-05-19 14:03:01,702 - INFO - Token: <FECHA_PARENTESES, ')', 28, 25>
+2026-05-19 14:03:01,702 - INFO - Token: <PONTO_VIRGULA, ';', 28, 26>
+2026-05-19 14:03:01,703 - INFO - Iniciando análise sintática.
+2026-05-19 14:03:01,706 - INFO - Análise sintática concluída.
+2026-05-19 14:03:01,706 - INFO - Iniciando análise semântica.
+2026-05-19 14:03:01,706 - INFO - Análise semântica concluída sem erros.
+2026-05-19 14:03:01,706 - INFO - Análise semântica concluída.
+2026-05-19 14:03:52,287 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 14:03:52,289 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 14:03:52,289 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 14:03:52,289 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 14:03:52,289 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 14:03:52,289 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 14:03:52,289 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 14:03:52,289 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 14:03:52,289 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 14:03:52,289 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 14:03:52,290 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 14:03:52,290 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 14:03:52,290 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 14:03:52,290 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'x', 10, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ATRIBUICAO, '=', 10, 2>
+2026-05-19 14:03:52,290 - INFO - Token: <NUMERO, '10', 10, 4>
+2026-05-19 14:03:52,290 - INFO - Token: <DIVISAO, '/', 10, 7>
+2026-05-19 14:03:52,290 - INFO - Token: <NUMERO, '0', 10, 9>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 10, 10>
+2026-05-19 14:03:52,290 - INFO - Token: <TIPO_INT, 'i', 12, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'x', 12, 2>
+2026-05-19 14:03:52,290 - INFO - Token: <ATRIBUICAO, '=', 12, 4>
+2026-05-19 14:03:52,290 - INFO - Token: <NUMERO, '20', 12, 6>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 12, 8>
+2026-05-19 14:03:52,290 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'nome', 14, 3>
+2026-05-19 14:03:52,290 - INFO - Token: <SOMA, '+', 14, 8>
+2026-05-19 14:03:52,290 - INFO - Token: <NUMERO, '2', 14, 10>
+2026-05-19 14:03:52,290 - INFO - Token: <FECHA_PARENTESES, ')', 14, 11>
+2026-05-19 14:03:52,290 - INFO - Token: <PONTO_VIRGULA, ';', 14, 12>
+2026-05-19 14:03:52,290 - INFO - Token: <IF, 'if', 16, 0>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'x', 16, 3>
+2026-05-19 14:03:52,290 - INFO - Token: <IGUAL, '==', 16, 5>
+2026-05-19 14:03:52,290 - INFO - Token: <ID, 'nome', 16, 8>
+2026-05-19 14:03:52,290 - INFO - Token: <ABRE_CHAVES, '{', 16, 13>
+2026-05-19 14:03:52,290 - INFO - Token: <PT, 'pt', 17, 4>
+2026-05-19 14:03:52,290 - INFO - Token: <ABRE_PARENTESES, '(', 17, 6>
+2026-05-19 14:03:52,291 - INFO - Token: <ID, 'x', 17, 7>
+2026-05-19 14:03:52,291 - INFO - Token: <FECHA_PARENTESES, ')', 17, 8>
+2026-05-19 14:03:52,291 - INFO - Token: <PONTO_VIRGULA, ';', 17, 9>
+2026-05-19 14:03:52,291 - INFO - Token: <FECHA_CHAVES, '}', 18, 0>
+2026-05-19 14:03:52,291 - INFO - Token: <IF, 'if', 20, 0>
+2026-05-19 14:03:52,291 - INFO - Token: <ID, 'nome', 20, 3>
+2026-05-19 14:03:52,291 - INFO - Token: <MENOR, '<', 20, 8>
+2026-05-19 14:03:52,291 - INFO - Token: <ID, 'x', 20, 10>
+2026-05-19 14:03:52,291 - INFO - Token: <ABRE_CHAVES, '{', 20, 12>
+2026-05-19 14:03:52,291 - INFO - Token: <PT, 'pt', 21, 4>
+2026-05-19 14:03:52,291 - INFO - Token: <ABRE_PARENTESES, '(', 21, 6>
+2026-05-19 14:03:52,291 - INFO - Token: <ID, 'nome', 21, 7>
+2026-05-19 14:03:52,291 - INFO - Token: <FECHA_PARENTESES, ')', 21, 11>
+2026-05-19 14:03:52,291 - INFO - Token: <PONTO_VIRGULA, ';', 21, 12>
+2026-05-19 14:03:52,291 - INFO - Token: <FECHA_CHAVES, '}', 22, 0>
+2026-05-19 14:03:52,291 - INFO - Iniciando análise sintática.
+2026-05-19 14:03:52,294 - INFO - Análise sintática concluída.
+2026-05-19 14:03:52,294 - INFO - Iniciando análise semântica.
+2026-05-19 14:03:52,294 - ERROR - Análise semântica encontrou 8 erro(s).
+2026-05-19 14:03:52,294 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 14:03:52,294 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:03:52,294 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:03:52,294 - ERROR - SEM-007 [Linha 10, Coluna 9] Lexema: '0' | Contexto: termo aritmético | Mensagem: Divisão por zero não é permitida. | Sugestão: Use um divisor diferente de zero.
+2026-05-19 14:03:52,294 - ERROR - SEM-002 [Linha 12, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 14:03:52,294 - ERROR - SEM-005 [Linha 14, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 14:03:52,294 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 14:03:52,295 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 14:03:52,295 - INFO - Análise semântica concluída.

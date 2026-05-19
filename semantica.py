@@ -113,6 +113,22 @@ class AnalisadorSemantico(cmaismenosVisitor):
             return token_ou_contexto.start
         return None
 
+    def _fator_e_zero_literal(self, fator):
+        numero = fator.NUMERO()
+        if numero is not None:
+            return numero.getText() == "0"
+        return self._expressao_e_zero_literal(fator.expressao())
+
+    def _expressao_e_zero_literal(self, expressao):
+        if expressao is None or len(expressao.termo()) != 1:
+            return False
+        return self._termo_e_zero_literal(expressao.termo(0))
+
+    def _termo_e_zero_literal(self, termo):
+        if termo is None or len(termo.fator()) != 1:
+            return False
+        return self._fator_e_zero_literal(termo.fator(0))
+
     def visitPrograma(self, ctx: cmaismenosParser.ProgramaContext):
         for comando in ctx.comando():
             self.visit(comando)
@@ -229,9 +245,22 @@ class AnalisadorSemantico(cmaismenosVisitor):
         return INTEIRO
 
     def visitTermo(self, ctx: cmaismenosParser.TermoContext):
-        tipos_fator = [self.visit(fator) for fator in ctx.fator()]
+        fatores = ctx.fator()
+        tipos_fator = [self.visit(fator) for fator in fatores]
         if len(tipos_fator) == 1:
             return tipos_fator[0]
+
+        for indice, filho in enumerate(ctx.children[:-1]):
+            if filho.getText() == "/":
+                divisor = ctx.children[indice + 1]
+                if isinstance(divisor, cmaismenosParser.FatorContext) and self._fator_e_zero_literal(divisor):
+                    self._adicionar_erro(
+                        "SEM-007",
+                        divisor,
+                        "Divisão por zero não é permitida.",
+                        "termo aritmético",
+                        "Use um divisor diferente de zero.",
+                    )
 
         for tipo_fator in tipos_fator:
             if tipo_fator != INTEIRO and tipo_fator != DESCONHECIDO:
