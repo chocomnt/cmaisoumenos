@@ -1,32 +1,20 @@
-#!/usr/bin/env -S /home/kauan/Documentos/Projetos/cmaismenos/antlr/bin/python /home/kauan/Documentos/Projetos/cmaismenos/cmaisoumenos/compilador.py
-
-# Este arquivo testa erros semanticos.
-# Ele passa pela analise lexica e sintatica, mas falha na analise semantica.
-
 i x = 10;
 s nome = "ana";
 
-# SEM-001: variavel usada sem declaracao.
 pt(y);
 
-# SEM-003: inteiro recebendo texto.
 x = nome;
 
-# SEM-003: texto recebendo inteiro.
 nome = x + 1;
 
-# SEM-002: variavel declarada novamente no mesmo escopo.
 i x = 20;
 
-# SEM-005: operacao aritmetica com texto.
 pt(nome + 2);
 
-# SEM-006: comparacao == entre tipos diferentes.
 if x == nome {
     pt(x);
 }
 
-# SEM-006: comparacao < com texto.
 if nome < x {
     pt(nome);
 }

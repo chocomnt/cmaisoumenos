@@ -1,7 +1,2 @@
-#!/usr/bin/env -S /home/kauan/Documentos/Projetos/cmaismenos/antlr/bin/python /home/kauan/Documentos/Projetos/cmaismenos/cmaisoumenos/compilador.py
-
-# Este arquivo testa erro sintatico.
-# Falta ponto e virgula no final da primeira declaracao.
-
 i x = 10
 pt(x);

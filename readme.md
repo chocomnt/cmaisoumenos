@@ -182,3 +182,19 @@ A explicação completa da implementação está em `analise_semantica.md`.
 
   No fundo, a interface serve para transformar o projeto em uma ferramenta mais parecida com um compilador real: você passa um arquivo fonte e ela controla todo
   o fluxo.
+
+  
+
+# OPÇÕES DE INTERFACE DO COMPILADOR.PY
+
+  argumentos:
+  arquivo               arquivo fonte .cmm que será analisado e executado; padrão: entrada.cmm
+
+opções:
+  -h, --ajuda           mostra esta mensagem de ajuda e encerra
+  --somente-analisar    executa as análises léxica, sintática e semântica sem rodar o interpretador
+  --mostrar-arvore      mostra a árvore sintática textual no terminal
+  --sem-arvore-dot      não gera o arquivo DOT da árvore sintática
+  --arvore-dot ARVORE_DOT
+                        nome do arquivo DOT gerado; padrão: arvore.dot
+  --log LOG             nome do arquivo de log; padrão: compilador.log
