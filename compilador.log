@@ -2479,3 +2479,161 @@
 2026-05-19 14:03:52,294 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
 2026-05-19 14:03:52,295 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
 2026-05-19 14:03:52,295 - INFO - Análise semântica concluída.
+2026-05-19 14:34:04,934 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 14:34:04,939 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 14:34:04,939 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 14:34:04,939 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 14:34:04,939 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 14:34:04,939 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 14:34:04,940 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 14:34:04,940 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 14:34:04,940 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 14:34:04,940 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 14:34:04,940 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 14:34:04,940 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 14:34:04,940 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 14:34:04,940 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 14:34:04,940 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 14:34:04,940 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 14:34:04,940 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 14:34:04,940 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 14:34:04,940 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 14:34:04,940 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 14:34:04,941 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 14:34:04,941 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 14:34:04,941 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 14:34:04,941 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 14:34:04,941 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 14:34:04,941 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 14:34:04,941 - INFO - Token: <ID, 'x', 10, 0>
+2026-05-19 14:34:04,941 - INFO - Token: <ATRIBUICAO, '=', 10, 2>
+2026-05-19 14:34:04,941 - INFO - Token: <NUMERO, '10', 10, 4>
+2026-05-19 14:34:04,941 - INFO - Token: <DIVISAO, '/', 10, 7>
+2026-05-19 14:34:04,941 - INFO - Token: <NUMERO, '0', 10, 9>
+2026-05-19 14:34:04,941 - INFO - Token: <PONTO_VIRGULA, ';', 10, 10>
+2026-05-19 14:34:04,941 - INFO - Token: <TIPO_INT, 'i', 12, 0>
+2026-05-19 14:34:04,941 - INFO - Token: <ID, 'x', 12, 2>
+2026-05-19 14:34:04,941 - INFO - Token: <ATRIBUICAO, '=', 12, 4>
+2026-05-19 14:34:04,941 - INFO - Token: <NUMERO, '20', 12, 6>
+2026-05-19 14:34:04,941 - INFO - Token: <PONTO_VIRGULA, ';', 12, 8>
+2026-05-19 14:34:04,942 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:34:04,942 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:34:04,942 - INFO - Token: <ID, 'nome', 14, 3>
+2026-05-19 14:34:04,942 - INFO - Token: <SOMA, '+', 14, 8>
+2026-05-19 14:34:04,942 - INFO - Token: <NUMERO, '2', 14, 10>
+2026-05-19 14:34:04,942 - INFO - Token: <FECHA_PARENTESES, ')', 14, 11>
+2026-05-19 14:34:04,942 - INFO - Token: <PONTO_VIRGULA, ';', 14, 12>
+2026-05-19 14:34:04,942 - INFO - Token: <IF, 'if', 16, 0>
+2026-05-19 14:34:04,942 - INFO - Token: <ID, 'x', 16, 3>
+2026-05-19 14:34:04,942 - INFO - Token: <IGUAL, '==', 16, 5>
+2026-05-19 14:34:04,942 - INFO - Token: <ID, 'nome', 16, 8>
+2026-05-19 14:34:04,942 - INFO - Token: <ABRE_CHAVES, '{', 16, 13>
+2026-05-19 14:34:04,942 - INFO - Token: <PT, 'pt', 17, 4>
+2026-05-19 14:34:04,942 - INFO - Token: <ABRE_PARENTESES, '(', 17, 6>
+2026-05-19 14:34:04,942 - INFO - Token: <ID, 'x', 17, 7>
+2026-05-19 14:34:04,942 - INFO - Token: <FECHA_PARENTESES, ')', 17, 8>
+2026-05-19 14:34:04,942 - INFO - Token: <PONTO_VIRGULA, ';', 17, 9>
+2026-05-19 14:34:04,943 - INFO - Token: <FECHA_CHAVES, '}', 18, 0>
+2026-05-19 14:34:04,943 - INFO - Token: <IF, 'if', 20, 0>
+2026-05-19 14:34:04,943 - INFO - Token: <ID, 'nome', 20, 3>
+2026-05-19 14:34:04,943 - INFO - Token: <MENOR, '<', 20, 8>
+2026-05-19 14:34:04,943 - INFO - Token: <ID, 'x', 20, 10>
+2026-05-19 14:34:04,943 - INFO - Token: <ABRE_CHAVES, '{', 20, 12>
+2026-05-19 14:34:04,943 - INFO - Token: <PT, 'pt', 21, 4>
+2026-05-19 14:34:04,943 - INFO - Token: <ABRE_PARENTESES, '(', 21, 6>
+2026-05-19 14:34:04,943 - INFO - Token: <ID, 'nome', 21, 7>
+2026-05-19 14:34:04,943 - INFO - Token: <FECHA_PARENTESES, ')', 21, 11>
+2026-05-19 14:34:04,943 - INFO - Token: <PONTO_VIRGULA, ';', 21, 12>
+2026-05-19 14:34:04,943 - INFO - Token: <FECHA_CHAVES, '}', 22, 0>
+2026-05-19 14:34:04,943 - INFO - Iniciando análise sintática.
+2026-05-19 14:34:04,950 - INFO - Análise sintática concluída.
+2026-05-19 14:34:04,950 - INFO - Iniciando análise semântica.
+2026-05-19 14:34:04,951 - ERROR - Análise semântica encontrou 8 erro(s).
+2026-05-19 14:34:04,951 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 14:34:04,951 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:34:04,951 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:34:04,951 - ERROR - SEM-007 [Linha 10, Coluna 9] Lexema: '0' | Contexto: termo aritmético | Mensagem: Divisão por zero não é permitida. | Sugestão: Use um divisor diferente de zero.
+2026-05-19 14:34:04,951 - ERROR - SEM-002 [Linha 12, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 14:34:04,952 - ERROR - SEM-005 [Linha 14, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 14:34:04,952 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 14:34:04,952 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 14:34:04,952 - INFO - Análise semântica concluída.
+2026-05-19 14:37:54,940 - INFO - Iniciando compilação do arquivo teste_erros_semanticos.cmm.
+2026-05-19 14:37:54,947 - INFO - Token: <TIPO_INT, 'i', 1, 0>
+2026-05-19 14:37:54,947 - INFO - Token: <ID, 'x', 1, 2>
+2026-05-19 14:37:54,947 - INFO - Token: <ATRIBUICAO, '=', 1, 4>
+2026-05-19 14:37:54,948 - INFO - Token: <NUMERO, '10', 1, 6>
+2026-05-19 14:37:54,948 - INFO - Token: <PONTO_VIRGULA, ';', 1, 8>
+2026-05-19 14:37:54,948 - INFO - Token: <TIPO_STR, 's', 2, 0>
+2026-05-19 14:37:54,948 - INFO - Token: <ID, 'nome', 2, 2>
+2026-05-19 14:37:54,948 - INFO - Token: <ATRIBUICAO, '=', 2, 7>
+2026-05-19 14:37:54,948 - INFO - Token: <STRING, '"ana"', 2, 9>
+2026-05-19 14:37:54,948 - INFO - Token: <PONTO_VIRGULA, ';', 2, 14>
+2026-05-19 14:37:54,948 - INFO - Token: <PT, 'pt', 4, 0>
+2026-05-19 14:37:54,948 - INFO - Token: <ABRE_PARENTESES, '(', 4, 2>
+2026-05-19 14:37:54,948 - INFO - Token: <ID, 'y', 4, 3>
+2026-05-19 14:37:54,948 - INFO - Token: <FECHA_PARENTESES, ')', 4, 4>
+2026-05-19 14:37:54,949 - INFO - Token: <PONTO_VIRGULA, ';', 4, 5>
+2026-05-19 14:37:54,949 - INFO - Token: <ID, 'x', 6, 0>
+2026-05-19 14:37:54,949 - INFO - Token: <ATRIBUICAO, '=', 6, 2>
+2026-05-19 14:37:54,949 - INFO - Token: <ID, 'nome', 6, 4>
+2026-05-19 14:37:54,949 - INFO - Token: <PONTO_VIRGULA, ';', 6, 8>
+2026-05-19 14:37:54,949 - INFO - Token: <ID, 'nome', 8, 0>
+2026-05-19 14:37:54,949 - INFO - Token: <ATRIBUICAO, '=', 8, 5>
+2026-05-19 14:37:54,949 - INFO - Token: <ID, 'x', 8, 7>
+2026-05-19 14:37:54,949 - INFO - Token: <SOMA, '+', 8, 9>
+2026-05-19 14:37:54,949 - INFO - Token: <NUMERO, '1', 8, 11>
+2026-05-19 14:37:54,949 - INFO - Token: <PONTO_VIRGULA, ';', 8, 12>
+2026-05-19 14:37:54,949 - INFO - Token: <ID, 'x', 10, 0>
+2026-05-19 14:37:54,950 - INFO - Token: <ATRIBUICAO, '=', 10, 2>
+2026-05-19 14:37:54,950 - INFO - Token: <NUMERO, '10', 10, 4>
+2026-05-19 14:37:54,950 - INFO - Token: <DIVISAO, '/', 10, 7>
+2026-05-19 14:37:54,950 - INFO - Token: <NUMERO, '0', 10, 9>
+2026-05-19 14:37:54,950 - INFO - Token: <PONTO_VIRGULA, ';', 10, 10>
+2026-05-19 14:37:54,950 - INFO - Token: <TIPO_INT, 'i', 12, 0>
+2026-05-19 14:37:54,950 - INFO - Token: <ID, 'x', 12, 2>
+2026-05-19 14:37:54,950 - INFO - Token: <ATRIBUICAO, '=', 12, 4>
+2026-05-19 14:37:54,951 - INFO - Token: <NUMERO, '20', 12, 6>
+2026-05-19 14:37:54,951 - INFO - Token: <PONTO_VIRGULA, ';', 12, 8>
+2026-05-19 14:37:54,951 - INFO - Token: <PT, 'pt', 14, 0>
+2026-05-19 14:37:54,951 - INFO - Token: <ABRE_PARENTESES, '(', 14, 2>
+2026-05-19 14:37:54,951 - INFO - Token: <ID, 'nome', 14, 3>
+2026-05-19 14:37:54,951 - INFO - Token: <SOMA, '+', 14, 8>
+2026-05-19 14:37:54,951 - INFO - Token: <NUMERO, '2', 14, 10>
+2026-05-19 14:37:54,951 - INFO - Token: <FECHA_PARENTESES, ')', 14, 11>
+2026-05-19 14:37:54,951 - INFO - Token: <PONTO_VIRGULA, ';', 14, 12>
+2026-05-19 14:37:54,951 - INFO - Token: <IF, 'if', 16, 0>
+2026-05-19 14:37:54,951 - INFO - Token: <ID, 'x', 16, 3>
+2026-05-19 14:37:54,951 - INFO - Token: <IGUAL, '==', 16, 5>
+2026-05-19 14:37:54,952 - INFO - Token: <ID, 'nome', 16, 8>
+2026-05-19 14:37:54,952 - INFO - Token: <ABRE_CHAVES, '{', 16, 13>
+2026-05-19 14:37:54,952 - INFO - Token: <PT, 'pt', 17, 4>
+2026-05-19 14:37:54,952 - INFO - Token: <ABRE_PARENTESES, '(', 17, 6>
+2026-05-19 14:37:54,952 - INFO - Token: <ID, 'x', 17, 7>
+2026-05-19 14:37:54,952 - INFO - Token: <FECHA_PARENTESES, ')', 17, 8>
+2026-05-19 14:37:54,952 - INFO - Token: <PONTO_VIRGULA, ';', 17, 9>
+2026-05-19 14:37:54,952 - INFO - Token: <FECHA_CHAVES, '}', 18, 0>
+2026-05-19 14:37:54,952 - INFO - Token: <IF, 'if', 20, 0>
+2026-05-19 14:37:54,952 - INFO - Token: <ID, 'nome', 20, 3>
+2026-05-19 14:37:54,952 - INFO - Token: <MENOR, '<', 20, 8>
+2026-05-19 14:37:54,952 - INFO - Token: <ID, 'x', 20, 10>
+2026-05-19 14:37:54,952 - INFO - Token: <ABRE_CHAVES, '{', 20, 12>
+2026-05-19 14:37:54,953 - INFO - Token: <PT, 'pt', 21, 4>
+2026-05-19 14:37:54,953 - INFO - Token: <ABRE_PARENTESES, '(', 21, 6>
+2026-05-19 14:37:54,953 - INFO - Token: <ID, 'nome', 21, 7>
+2026-05-19 14:37:54,953 - INFO - Token: <FECHA_PARENTESES, ')', 21, 11>
+2026-05-19 14:37:54,953 - INFO - Token: <PONTO_VIRGULA, ';', 21, 12>
+2026-05-19 14:37:54,953 - INFO - Token: <FECHA_CHAVES, '}', 22, 0>
+2026-05-19 14:37:54,953 - INFO - Iniciando análise sintática.
+2026-05-19 14:37:54,962 - INFO - Análise sintática concluída.
+2026-05-19 14:37:54,962 - INFO - Iniciando análise semântica.
+2026-05-19 14:37:54,963 - ERROR - Análise semântica encontrou 8 erro(s).
+2026-05-19 14:37:54,964 - ERROR - SEM-001 [Linha 4, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
+2026-05-19 14:37:54,964 - ERROR - SEM-003 [Linha 6, Coluna 0] Lexema: 'x' | Contexto: atribuição | Mensagem: Variável 'x' é do tipo inteiro, mas recebeu expressão do tipo texto. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:37:54,964 - ERROR - SEM-003 [Linha 8, Coluna 0] Lexema: 'nome' | Contexto: atribuição | Mensagem: Variável 'nome' é do tipo texto, mas recebeu expressão do tipo inteiro. | Sugestão: Atribua um valor compatível com o tipo declarado da variável.
+2026-05-19 14:37:54,964 - ERROR - SEM-007 [Linha 10, Coluna 9] Lexema: '0' | Contexto: termo aritmético | Mensagem: Divisão por zero não é permitida. | Sugestão: Use um divisor diferente de zero.
+2026-05-19 14:37:54,964 - ERROR - SEM-002 [Linha 12, Coluna 2] Lexema: 'x' | Contexto: declaração de variável | Mensagem: Variável 'x' já foi declarada neste escopo. | Sugestão: Use outro nome ou remova a declaração duplicada. A declaração anterior está na linha 1, coluna 2.
+2026-05-19 14:37:54,964 - ERROR - SEM-005 [Linha 14, Coluna 3] Lexema: 'nome' | Contexto: expressão aritmética | Mensagem: Operadores '+' e '-' só podem ser usados com inteiros. | Sugestão: Remova strings da expressão ou use apenas variáveis inteiras.
+2026-05-19 14:37:54,964 - ERROR - SEM-006 [Linha 16, Coluna 3] Lexema: 'x' | Contexto: comparação | Mensagem: Comparação '==' recebeu valores de tipos diferentes: inteiro e texto. | Sugestão: Compare valores do mesmo tipo.
+2026-05-19 14:37:54,964 - ERROR - SEM-006 [Linha 20, Coluna 3] Lexema: 'nome' | Contexto: comparação | Mensagem: Comparação '<' só pode ser usada com inteiros. | Sugestão: Use '<' e '>' apenas entre números ou variáveis inteiras.
+2026-05-19 14:37:54,964 - INFO - Análise semântica concluída.
