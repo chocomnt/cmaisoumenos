@@ -7,6 +7,7 @@ from antlr4.error.ErrorListener import ErrorListener
 
 from cmaismenosLexer import cmaismenosLexer
 from cmaismenosParser import cmaismenosParser
+from gerador import GeradorPython
 from interpretador import Interpretador
 from semantica import AnalisadorSemantico
 
@@ -189,6 +190,21 @@ def compilar(argumentos):
     if not argumentos.sem_arvore_dot:
         gerar_arvore_dot(arvore, argumentos.arvore_dot)
 
+    if argumentos.gerar:
+        print("\n============ GERAÇÃO DE CÓDIGO PYTHON ================")
+        logging.info("Iniciando geração de código Python.")
+        gerador = GeradorPython()
+        codigo_python = gerador.gerar(arvore)
+
+        nome_saida = argumentos.saida
+        with open(nome_saida, "w", encoding="utf-8") as arquivo:
+            arquivo.write(codigo_python)
+
+        print(f"Código Python gerado em: {nome_saida}")
+        logging.info("Código Python gerado em %s.", nome_saida)
+        print("======================================")
+        return 0
+
     if argumentos.somente_analisar:
         print("\nCompilação encerrada após as análises solicitadas.")
         return 0
@@ -245,6 +261,16 @@ def criar_interface():
         "--log",
         default="compilador.log",
         help="nome do arquivo de log; padrão: compilador.log",
+    )
+    interface.add_argument(
+        "--gerar",
+        action="store_true",
+        help="gera código Python equivalente ao programa .cmm",
+    )
+    interface.add_argument(
+        "--saida",
+        default="saida.py",
+        help="nome do arquivo Python gerado; padrão: saida.py",
     )
     return interface
 

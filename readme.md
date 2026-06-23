@@ -86,10 +86,34 @@ Definir nomes de saída:
 python compilador.py entrada.cmm --log compilador.log --arvore-dot arvore.dot
 ```
 
+Gerar código Python equivalente ao programa .cmm:
+
+```bash
+python compilador.py --gerar
+```
+
+Gerar código Python com nome de saída personalizado:
+
+```bash
+python compilador.py entrada.cmm --gerar --saida programa.py
+```
+
+Executar o código Python gerado:
+
+```bash
+python saida.py
+```
+
 Ver todas as opções:
 
 ```bash
 python compilador.py --ajuda
+```
+
+Rodar um .cmm diretamente, se ele tiver a primeira linha especial e permissão de execução:
+
+```bash
+./teste_compilador.cmm
 ```
 
 ## Etapas do Compilador
@@ -100,6 +124,7 @@ python compilador.py --ajuda
 - `cmaismenosVisitor.py`: visitante gerado pelo ANTLR.
 - `semantica.py`: analisador semântico escrito manualmente.
 - `interpretador.py`: execução dos comandos da linguagem.
+- `gerador.py`: geração de código Python equivalente ao programa .cmm.
 - `compilador.py`: interface principal do compilador.
 
 ## Tratamento de Erros
@@ -126,68 +151,38 @@ Exemplo de erro semântico:
 ERRO SEMÂNTICO: SEM-001 [Linha 2, Coluna 3] Lexema: 'y' | Contexto: uso de variável | Mensagem: Variável 'y' usada antes de ser declarada. | Sugestão: Declare 'y' antes de usar esse identificador em uma expressão.
 ```
 
-## Documentação da Análise Semântica
+## Geração de Código Python
 
-A explicação completa da implementação está em `analise_semantica.md`.
+O compilador pode gerar código Python equivalente ao programa `.cmm`. A tradução mantém a semântica da linguagem original usando construções nativas do Python:
 
-• A interface do compilador é o arquivo compilador.py:1.
+| cmaismenos | Python |
+|------------|--------|
+| `i x = 10;` | `x = 10` |
+| `s nome = "texto";` | `nome = "texto"` |
+| `x = 5;` | `x = 5` |
+| `rd(x);` | `x = int(input())` ou `x = input()` |
+| `pt(x);` | `print(x)` |
+| `if ... { } el { }` | `if ...: ... else: ...` |
+| `ei ... { }` | `elif ...: ...` |
+| `wl ... do { }` | `while ...: ...` |
+| `a / b` | `a // b` |
+| `and`, `or`, `!` | `and`, `or`, `not` |
 
-  No projeto, ela é o “ponto de entrada” do compilador. Em vez de você chamar manualmente cada parte, ela organiza tudo em ordem:
+O fluxo de geração de código é:
 
-  1. lê um arquivo .cmm;
-  2. faz análise léxica;
-  3. faz análise sintática;
-  4. faz análise semântica;
-  5. gera log;
-  6. gera a árvore sintática em .dot;
-  7. executa o programa se não houver erro.
+1. lê um arquivo .cmm;
+2. faz análise léxica;
+3. faz análise sintática;
+4. faz análise semântica;
+5. gera código Python equivalente;
+6. salva no arquivo de saída (padrão: `saida.py`).
 
-  Usos principais
+Se houver erros em qualquer etapa, o código não é gerado.
 
-  Rodar o programa padrão entrada.cmm:
+## Opções da Interface
 
-  python compilador.py
-
-  Rodar outro arquivo .cmm:
-
-  python compilador.py teste_compilador.cmm
-
-  Fazer apenas as análises, sem executar:
-
-  python compilador.py teste_erros_semanticos.cmm --somente-analisar
-
-  Mostrar a árvore sintática no terminal:
-
-  python compilador.py entrada.cmm --mostrar-arvore
-
-  Não gerar o arquivo arvore.dot:
-
-  python compilador.py entrada.cmm --sem-arvore-dot
-
-  Escolher o nome do arquivo .dot:
-
-  python compilador.py entrada.cmm --arvore-dot minha_arvore.dot
-
-  Escolher o nome do log:
-
-  python compilador.py entrada.cmm --log meu_log.log
-
-  Ver todas as opções:
-
-  python compilador.py --ajuda
-
-  Rodar um .cmm diretamente, se ele tiver a primeira linha especial e permissão de execução:
-
-  ./teste_compilador.cmm
-
-  No fundo, a interface serve para transformar o projeto em uma ferramenta mais parecida com um compilador real: você passa um arquivo fonte e ela controla todo
-  o fluxo.
-
-  
-
-# OPÇÕES DE INTERFACE DO COMPILADOR.PY
-
-  argumentos:
+```
+argumentos:
   arquivo               arquivo fonte .cmm que será analisado e executado; padrão: entrada.cmm
 
 opções:
@@ -198,3 +193,6 @@ opções:
   --arvore-dot ARVORE_DOT
                         nome do arquivo DOT gerado; padrão: arvore.dot
   --log LOG             nome do arquivo de log; padrão: compilador.log
+  --gerar               gera código Python equivalente ao programa .cmm
+  --saida SAIDA         nome do arquivo Python gerado; padrão: saida.py
+```
